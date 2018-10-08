@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-10-08 16:01:04"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description>@Author: Frank Schuster
+@Release Date: 2016-12-21
+@Version: 2.0
+
+## Service Portal - Report Widget ##
+This update set contains the following elements:
+- ngTable as a UI Script (CDN provides a 404 - see reported issue in the Github repo) &amp; ngTable stylesheet (CSS) 
+- Chart.js (2.4.0) &amp; Angular Chart JS (1.0.3) with JS &amp; CSS Includes. Chart.js ships with Service Portal, but in an older version, that e.g. does not allow Stacked Bar Reports
+- Widget Dependencies for ng-Table &amp; chart.js (ATTENTION: the OOTB Dependency for chart.js has been renamed to chart.js-old! Apply the "Chart.js Fix" Update set before applying this update set to make sure this change is made before the commit, otherwise you will run into a duplicate error for the angular module)
+- "ChartJS Report" widget that allows rendering of backend reports within Service Portal
+- New Table "Service Portal Report Instances" extends Instance [sp_instance] to hold all custom options for the Report widget
+</description><inserted/><name>Service Portal - Chart.js Report Widget</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>fdafd5994f8d2300ad404a10a310c75a</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-10-08 16:01:04</sys_created_on><sys_id>f652ad9d4f8d2300ad404a10a310c7c7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-10-08 16:01:04</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set></unload>
