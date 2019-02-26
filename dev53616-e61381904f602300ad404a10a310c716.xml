@@ -1,8 +1,860 @@
-<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-09-10 15:01:06"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description>Creates a global UI Action that will add any record (plus attachments) to the active update set:
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-26 16:08:28"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description>Creates a global UI Action that will add any record (plus attachments) to the active update set:
 -Appears as link at the bottom of each record
 -For adding multiple records at once, appears as a drop-down menu option on each list
 -Special handling for tables &amp; fields to add all dependencies
 -Special handling for catalog items &amp; order guides to add all dependencies (except user criteria)
 -Special handling for workflows to handle all sub-flows
 -Special handling for service portals, pages, and widgets to add all dependencies (except knowledge_bases/service_catalogs/chat_queues)
-</description><inserted/><name>Add to Update Set v2.6</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>e61381904f602300ad404a10a310c716</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2018-09-10 15:01:06</sys_created_on><sys_id>231801d44f602300ad404a10a310c7ab</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2018-09-10 15:01:06</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set></unload>
+</description><inserted/><name>Add to Update Set v2.6</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>e61381904f602300ad404a10a310c716</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-26 16:08:28</sys_created_on><sys_id>ce3ca3aa4f332300ad404a10a310c70b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-26 16:08:28</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_ui_action_131e99ed49e8950002ad45cc9609026f</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;add_update_set&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;comments&gt;Use this UI Action to force any record (and it's attachments) into the current update set&lt;/comments&gt;&lt;condition&gt;gs.hasRole('admin')&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;hint/&gt;&lt;keyboard_shortcut/&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;name&gt;Add to Update Set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[addToUpdateSet();
+
+function addToUpdateSet(){
+	//Get current URL for return
+	var url = GlideSession.get().getStack().bottom();
+
+	//Save current record
+	current.update();
+
+	//Initialize updateManager
+	var updateManager = new GlideUpdateManager2();
+
+	//Add record to update set
+	updateManager.saveRecord(current);
+
+	/*************************************/
+	/*** BEGIN SPECIAL RECORD HANDLING ***/
+	/*************************************/
+	var currTable = current.getTableName();
+	gs.info('**** ' + currTable);
+
+	//If the current record is an attachment, add the chunks
+	//(Attachments and chunks for other record types are auto-added)
+	if (currTable == 'sys_attachment')
+		addAttachmentChunks(current);
+
+	//If attachments are not detected, check the sys_attachment table anyway
+	//(Known attachments are auto-added, missing unknown attachments)
+	//(sys_user seems to be an exception)
+	else if (!current.hasAttachments() &amp;&amp; currTable != 'sys_user')
+		addAttachments(current);
+
+	//If current record is a sys_db_object (Table), get table and add it w/ dependencies
+	if (currTable == 'sys_db_object'){
+		var tableCollection = new GlideRecord("sys_dictionary");
+		tableCollection.addQuery("name", current.name.toString());
+		tableCollection.addQuery("internal_type.name","collection");
+		tableCollection.query();
+		if (tableCollection.next()) {
+			//Add collection (table) and dependencies
+			updateManager.saveRecord(tableCollection);
+			addFieldDependencies(tableCollection);
+			addTableDependencies(tableCollection);
+		}
+	}
+
+	//If current record is a dictionary element, add all element dependencies
+	if (currTable == 'sys_dictionary'){
+		addFieldDependencies(current);
+		//If current record is a 'collection' (table), add all table dependencies
+		if (current.internal_type.name.toString() == 'collection')
+			addTableDependencies(current);
+	}
+
+	//If current record is a service portal widget, add all dependencies
+	if (currTable == 'sp_widget'){
+		addWidgetDependencies(current);
+	}
+
+	//If current record is a service portal page, add all dependencies
+	if (currTable == 'sp_page'){
+		addPageDependencies(current);
+	}
+
+	//If current record is a service portal, add all dependencies
+	if (currTable == 'sp_portal'){
+		addPortalDependencies(current);
+	}
+
+	//If current record is a catalog item, add all dependencies
+	if (currTable == 'sc_cat_item' || currTable == 'sc_cat_item_producer' || currTable == 'sc_cat_item_guide' || currTable == 'sc_cat_item_content' || currTable == 'pc_software_cat_item' || currTable == 'pc_hardware_cat_item' || currTable == 'sc_cat_item_wizard'){
+		addCatItemDependencies(current);
+	}
+
+	//If current record is a workflow, add all subflows
+	if (currTable == 'wf_workflow'){
+		gatherChildWorkflows(current);
+		updateManager.saveRecord(current);
+	}
+
+	/*************************************/
+	/*** END SPECIAL RECORD HANDLING ***/
+	/*************************************/
+
+	//Display confirmation
+	var currentSet = new GlideRecord('sys_update_set');
+	currentSet.get(gs.getPreference('sys_update_set'));
+	gs.flushMessages(); //Flush to avoid multiples when list updating
+	gs.addInfoMessage('Record(s) added to update set ' + currentSet.name + '.');
+	action.setRedirectURL(url);
+}
+
+//Add attachments to the update set
+function addAttachments(record){
+	var updateManager = new GlideUpdateManager2();
+	var attach = new GlideRecord("sys_attachment");
+	attach.addQuery("table_sys_id", record.sys_id.toString());
+	attach.query();
+	while (attach.next()) {
+		//Process main sys_attachment record
+		updateManager.saveRecord(attach);
+		//Process sys_attachment_doc chunks
+		addAttachmentChunks(attach);
+	}
+}
+
+//Add attachment chunks to the update set
+function addAttachmentChunks(attachment){
+	var updateManager = new GlideUpdateManager2();
+	var attach_doc = new GlideRecord("sys_attachment_doc");
+	attach_doc.addQuery("sys_attachment", attachment.sys_id.toString());
+	attach_doc.orderBy("position");
+	attach_doc.query();
+	while (attach_doc.next())
+		updateManager.saveRecord(attach_doc);
+}
+
+//Add table dependencies to the update set
+function addTableDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	//Add table fields
+	var tableField = new GlideRecord("sys_dictionary");
+	tableField.addQuery("name", record.name.toString());
+	tableField.addQuery("element", "DOES NOT CONTAIN", "sys_");
+	tableField.addQuery("sys_id","!=",record.sys_id.toString()); //Don't re-add self
+	tableField.query();
+	while (tableField.next()) {
+		//Process table field
+		updateManager.saveRecord(tableField);
+		//Process table field dependencies
+		addFieldDependencies(tableField);
+	}
+	//Add ui sections &amp; elements
+	var uiSection = new GlideRecord("sys_ui_section");
+	uiSection.addQuery("name",record.name.toString());
+	//uiSection.addQuery("view","Default view");
+	uiSection.query();
+	while (uiSection.next())
+		updateManager.saveRecord(uiSection);
+	//Add form &amp; elements
+	var formView = new GlideRecord("sys_ui_form");
+	formView.addQuery("name",record.name.toString());
+		//formView.addQuery("view","Default view");
+	formView.query();
+		while (formView.next())
+		updateManager.saveRecord(formView);
+	//Add list views
+	var listView = new GlideRecord("sys_ui_list");
+	listView.addQuery("name", record.name.toString());
+	//listView.addQuery("view", "Default view");
+	listView.query();
+	while (listView.next())
+		updateManager.saveRecord(listView);
+	//Add related lists
+	var relatedList = new GlideRecord("sys_ui_related_list");
+	relatedList.addQuery("name", record.name.toString());
+	//relatedList.addQuery("view", "Default view");
+	relatedList.query();
+	while (relatedList.next()){
+		updateManager.saveRecord(relatedList);
+		var relatedListEntry = new GlideRecord("sys_ui_related_list_entry");
+		relatedListEntry.addQuery("list_id", relatedList.sys_id.toString());
+		relatedListEntry.query();
+		while (relatedListEntry.next())
+			updateManager.saveRecord(relatedListEntry);
+	}
+	//Add choices (redundant for non-extended fields)
+	var choice = new GlideRecord("sys_choice");
+	choice.addQuery("name", record.name.toString());
+	choice.query();
+	while (choice.next())
+		updateManager.saveRecord(choice);
+	//Add dictionary overrides (redundant for non-extended fields)
+	var override = new GlideRecord("sys_dictionary_override");
+	override.addQuery("name", record.name.toString());
+	override.query();
+	while (override.next())
+		updateManager.saveRecord(override);
+	//Add labels (redundant for non-extended fields)
+	var label = new GlideRecord("sys_documentation");
+	label.addQuery("name", record.name.toString());
+	label.query();
+	while (label.next())
+		updateManager.saveRecord(label);
+	//Add field styles
+	var fieldStyle = new GlideRecord("sys_ui_style");
+	fieldStyle.addQuery("name", record.name.toString());
+	fieldStyle.query();
+	while (fieldStyle.next())
+		updateManager.saveRecord(fieldStyle);
+	//Add access controls, access roles, &amp; roles (redundant for non-extended fields)
+	var acl = new GlideRecord("sys_security_acl");
+	acl.addQuery("name", record.name.toString()).addOrCondition("name", "STARTSWITH", record.name.toString() + '.');
+	acl.query();
+	while (acl.next()){
+		updateManager.saveRecord(acl);
+		var aclRole = new GlideRecord("sys_security_acl_role");
+		aclRole.addQuery("sys_security_acl", acl.sys_id.toString());
+		aclRole.query();
+		while (aclRole.next()){
+			var role = new GlideRecord("sys_user_role");
+			if (role.get(aclRole.sys_user_role.toString()))
+				updateManager.saveRecord(role);
+			updateManager.saveRecord(aclRole);
+		}
+	}
+	//Add client scripts
+	var clientScript = new GlideRecord("sys_script_client");
+	clientScript.addQuery("table", record.name.toString());
+	clientScript.query();
+	while (clientScript.next())
+		updateManager.saveRecord(clientScript);
+	//Add business rules
+	var businessRule = new GlideRecord("sys_script");
+	businessRule.addQuery("collection", record.name.toString());
+	businessRule.query();
+	while (businessRule.next())
+		updateManager.saveRecord(businessRule);
+	//Add ui actions
+	var uiAction = new GlideRecord("sys_ui_action");
+	uiAction.addQuery("table", record.name.toString());
+	uiAction.query();
+	while (uiAction.next()){
+		updateManager.saveRecord(uiAction);
+		var actionRole = new GlideRecord("sys_ui_action_role");
+		actionRole.addQuery("sys_ui_action", uiAction.sys_id.toString());
+		actionRole.query();
+		while (actionRole.next()){
+			var role2 = new GlideRecord("sys_user_role");
+			if (role2.get(actionRole.sys_user_role.toString()))
+				updateManager.saveRecord(role2);
+			updateManager.saveRecord(actionRole);
+		}
+	}
+	//Add ui policies
+	var uiPolicy = new GlideRecord("sys_ui_policy");
+	uiPolicy.addQuery("table", record.name.toString());
+	uiPolicy.query();
+	while (uiPolicy.next()){
+		updateManager.saveRecord(uiPolicy);
+		var uiPolicyAction = new GlideRecord("sys_ui_policy_action");
+		uiPolicyAction.addQuery("ui_policy", uiPolicy.sys_id.toString());
+		uiPolicyAction.query();
+		while (uiPolicyAction.next())
+			updateManager.saveRecord(uiPolicyAction);
+	}
+	//Add data policies
+	var dataPolicy = new GlideRecord("sys_data_policy2");
+	dataPolicy.addQuery("model_table", record.name.toString());
+	dataPolicy.query();
+	while (dataPolicy.next()){
+		updateManager.saveRecord(dataPolicy);
+		var dataPolicyRule = new GlideRecord("sys_data_policy_rule");
+		dataPolicyRule.addQuery("sys_data_policy", dataPolicy.sys_id.toString());
+		dataPolicyRule.query();
+		while (dataPolicyRule.next())
+			updateManager.saveRecord(dataPolicyRule);
+	}
+	//Add modules and applications (New Record &amp; List of Records only)
+	var navModule = new GlideRecord("sys_app_module");
+	navModule.addQuery("name", record.name.toString());
+	navModule.addQuery("link_type", "IN", "NEW,LIST");
+	navModule.query();
+	while (navModule.next()){
+		var navApplication = new GlideRecord("sys_app_application");
+		if (navApplication.get(navModule.application.toString()))
+			updateManager.saveRecord(navApplication);
+		updateManager.saveRecord(navModule);
+	}
+}
+
+//Add field dependencies to the update set
+function addFieldDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	//Add choices
+	var choice = new GlideRecord("sys_choice");
+	choice.addQuery("name", record.name.toString());
+	choice.addQuery("element", record.element.toString());
+	choice.query();
+	while (choice.next())
+		updateManager.saveRecord(choice);
+	//Add attributes
+	var attributeM2M = new GlideRecord("sys_schema_attribute_m2m");
+	attributeM2M.addQuery("schema", record.sys_id.toString());
+	attributeM2M.query();
+	while (attributeM2M.next()) {
+		//Add attribute
+		var attribute = new GlideRecord("sys_schema_attribute");
+		if (attribute.get(attributeM2M.attribute.sys_id.toString()))
+			updateManager.saveRecord(attribute);
+		//Add attribute m2m
+		updateManager.saveRecord(attributeM2M);
+	}
+	//Add labels
+	var label = new GlideRecord("sys_documentation");
+	label.addQuery("name", record.name.toString());
+	label.addQuery("element", record.element.toString());
+	label.query();
+	while (label.next())
+		updateManager.saveRecord(label);
+	//Add field styles
+	var fieldStyle = new GlideRecord("sys_ui_style");
+	fieldStyle.addQuery("name", record.name.toString());
+	fieldStyle.addQuery("element", record.element.toString());
+	fieldStyle.query();
+	while (fieldStyle.next())
+		updateManager.saveRecord(fieldStyle);
+	//Add dictionary overrides
+	var override = new GlideRecord("sys_dictionary_override");
+	override.addQuery("name", record.name.toString());
+	override.addQuery("element", record.element.toString());
+	override.query();
+	while (override.next())
+		updateManager.saveRecord(override);
+	//Add access controls, access roles, &amp; roles (redundant for non-extended fields)
+	var acl = new GlideRecord("sys_security_acl");
+	acl.addQuery("name", record.name.toString() + '.' + record.element.toString());
+	acl.query();
+	while (acl.next()){
+		updateManager.saveRecord(acl);
+		var aclRole = new GlideRecord("sys_security_acl_role");
+		aclRole.addQuery("sys_security_acl", acl.sys_id.toString());
+		aclRole.query();
+		while (aclRole.next()){
+			var role = new GlideRecord("sys_user_role");
+			if (role.get(aclRole.sys_user_role.toString()))
+				updateManager.saveRecord(role);
+			updateManager.saveRecord(aclRole);
+		}
+	}
+}
+
+//Add portal dependencies to the update set
+function addPortalDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	var portalPage;
+	//Add homepage
+	if (!record.homepage.nil()){
+		portalPage = new GlideRecord("sp_page");
+		if (portalPage.get(record.homepage.sys_id.toString())) {
+			updateManager.saveRecord(portalPage);
+			addPageDependencies(portalPage);
+		}
+	}
+	//Add KB homepage
+	if (!record.kb_knowledge_page.nil()){
+		portalPage = new GlideRecord("sp_page");
+		if (portalPage.get(record.kb_knowledge_page.sys_id.toString())) {
+			updateManager.saveRecord(portalPage);
+			addPageDependencies(portalPage);
+		}
+	}
+	//Add Login page
+	if (!record.login_page.nil()){
+		portalPage = new GlideRecord("sp_page");
+		if (portalPage.get(record.login_page.sys_id.toString())) {
+			updateManager.saveRecord(portalPage);
+			addPageDependencies(portalPage);
+		}
+	}
+	//Add 404 page
+	if (!record.notfound_page.nil()){
+		portalPage = new GlideRecord("sp_page");
+		if (portalPage.get(record.notfound_page.sys_id.toString())) {
+			updateManager.saveRecord(portalPage);
+			addPageDependencies(portalPage);
+		}
+	}
+	//Add Catalog page
+	if (!record.sc_catalog_page.nil()){
+		portalPage = new GlideRecord("sp_page");
+		if (portalPage.get(record.sc_catalog_page.sys_id.toString())) {
+			updateManager.saveRecord(portalPage);
+			addPageDependencies(portalPage);
+		}
+	}
+	//Add Main Menu
+	if (!record.sp_rectangle_menu.nil()){
+		var mainMenu = new GlideRecord("sp_instance_menu");
+		if (mainMenu.get(record.sp_rectangle_menu.sys_id.toString())) {
+			//Add Menu rectangle items
+			var menuRectangleItem = new GlideRecord("sp_rectangle_menu_item");
+			menuRectangleItem.addQuery("sp_rectangle_menu", mainMenu.sys_id.toString());
+			menuRectangleItem.query();
+			while (menuRectangleItem.next()) {
+				updateManager.saveRecord(menuRectangleItem);
+				gatherChildMenuRectangleItems(menuRectangleItem);
+			}
+			updateManager.saveRecord(mainMenu);
+		}
+	}
+	//Add Theme
+	if (!record.theme.nil()){
+		var theme = new GlideRecord("sp_theme");
+		if (theme.get(record.theme.sys_id.toString())) {
+			//Add header &amp; footer
+			var headerFooter = new GlideRecord("sp_header_footer");
+			headerFooter.addQuery("sys_id", theme.header.sys_id.toString()).addOrCondition("sys_id", theme.footer.sys_id.toString());
+			headerFooter.query();
+			while (headerFooter.next()) {
+				//Add ng-templates
+				var ngTemplate = new GlideRecord("sp_ng_template");
+				ngTemplate.addQuery("sp_widget", headerFooter.sys_id.toString());
+				ngTemplate.query();
+				while (ngTemplate.next())
+					updateManager.saveRecord(ngTemplate);
+				updateManager.saveRecord(headerFooter);
+			}
+			//Add JS Includes
+			var jsIncludeM2M = new GlideRecord("m2m_sp_theme_js_include");
+			jsIncludeM2M.addQuery("sp_theme", theme.sys_id.toString());
+			jsIncludeM2M.query();
+			while (jsIncludeM2M.next()) {
+				var jsInclude = new GlideRecord("sp_js_include");
+				if (jsInclude.get(jsIncludeM2M.sp_js_include.sys_id.toString())) {
+					//For local js includes, get ui script
+					if (jsInclude.source.toString() == 'local'){
+						var uiScript = new GlideRecord("sys_ui_script");
+						if (uiScript.get(jsInclude.sys_ui_script.sys_id.toString()))
+							updateManager.saveRecord(uiScript);
+					}
+					updateManager.saveRecord(jsInclude);
+				}
+				updateManager.saveRecord(jsIncludeM2M);
+			}
+			//Add CSS Includes
+			var cssIncludeM2M = new GlideRecord("m2m_sp_theme_css_include");
+			cssIncludeM2M.addQuery("sp_theme", theme.sys_id.toString());
+			cssIncludeM2M.query();
+			while (cssIncludeM2M.next()) {
+				var cssInclude = new GlideRecord("sp_css_include");
+				if (cssInclude.get(cssIncludeM2M.sp_css_include.sys_id.toString())) {
+					//For local css includes, get style sheet
+					if (cssInclude.source.toString() == 'local'){
+						var styleSheet = new GlideRecord("sp_css");
+						if (styleSheet.get(cssInclude.sp_css.sys_id.toString()))
+							updateManager.saveRecord(styleSheet);
+					}
+					updateManager.saveRecord(cssInclude);
+				}
+				updateManager.saveRecord(cssIncludeM2M);
+			}
+			updateManager.saveRecord(theme);
+		}
+	}
+}
+
+//Add page dependencies to the update set
+function addPageDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	//Add containers
+	var container = new GlideRecord("sp_container");
+	container.addQuery("sp_page", record.sys_id.toString());
+	container.query();
+	while (container.next()) {
+		//Add rows
+		var row = new GlideRecord("sp_row");
+		row.addQuery("sp_container", container.sys_id.toString());
+		row.query();
+		while (row.next()) {
+			//add columns and column rows and widget instances
+			gatherColumnsAndColumnRowsAndInstances(row);
+			updateManager.saveRecord(row);
+		}
+		updateManager.saveRecord(container);
+	}
+	//Add menu rectangle items
+	var menuRectangleItem = new GlideRecord("sp_rectangle_menu_item");
+	menuRectangleItem.addQuery("sp_page", record.sys_id.toString());
+	menuRectangleItem.query();
+	while (menuRectangleItem.next()) {
+		updateManager.saveRecord(menuRectangleItem);
+		gatherChildMenuRectangleItems(menuRectangleItem);
+	}
+}
+
+//Add widget dependencies to the update set
+function addWidgetDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	//Add dependencies
+	var dependencyM2M = new GlideRecord("m2m_sp_widget_dependency");
+	dependencyM2M.addQuery("sp_widget", record.sys_id.toString());
+	dependencyM2M.query();
+	while (dependencyM2M.next()) {
+		var dependency = new GlideRecord("sp_dependency");
+		if (dependency.get(dependencyM2M.sp_dependency.sys_id.toString())){
+			//Add JS Includes
+			var jsIncludeM2M = new GlideRecord("m2m_sp_dependency_js_include");
+			jsIncludeM2M.addQuery("sp_dependency", dependency.sys_id.toString());
+			jsIncludeM2M.query();
+			while (jsIncludeM2M.next()) {
+				var jsInclude = new GlideRecord("sp_js_include");
+				if (jsInclude.get(jsIncludeM2M.sp_js_include.sys_id.toString())) {
+					//For local js includes, get ui script
+					if (jsInclude.source.toString() == 'local'){
+						var uiScript = new GlideRecord("sys_ui_script");
+						if (uiScript.get(jsInclude.sys_ui_script.sys_id.toString()))
+							updateManager.saveRecord(uiScript);
+					}
+					updateManager.saveRecord(jsInclude);
+				}
+				updateManager.saveRecord(jsIncludeM2M);
+			}
+			//Add CSS Includes
+			var cssIncludeM2M = new GlideRecord("m2m_sp_dependency_css_include");
+			cssIncludeM2M.addQuery("sp_dependency", dependency.sys_id.toString());
+			cssIncludeM2M.query();
+			while (cssIncludeM2M.next()) {
+				var cssInclude = new GlideRecord("sp_css_include");
+				if (cssInclude.get(cssIncludeM2M.sp_css_include.sys_id.toString())) {
+					//For local css includes, get style sheet
+					if (cssInclude.source.toString() == 'local'){
+						var styleSheet = new GlideRecord("sp_css");
+						if (styleSheet.get(cssInclude.sp_css.sys_id.toString()))
+							updateManager.saveRecord(styleSheet);
+					}
+					updateManager.saveRecord(cssInclude);
+				}
+				updateManager.saveRecord(cssIncludeM2M);
+			}
+			updateManager.saveRecord(dependency);
+		}
+		updateManager.saveRecord(dependencyM2M);
+	}
+	//Add angular providers
+	var providerM2M = new GlideRecord("m2m_sp_ng_pro_sp_widget");
+	providerM2M.addQuery("sp_widget", record.sys_id.toString());
+	providerM2M.query();
+	while (providerM2M.next()) {
+		var provider = new GlideRecord("sp_angular_provider");
+		if (provider.get(providerM2M.sp_angular_provider.sys_id.toString())) {
+			//Get required providers
+			gatherRequiredProviders(provider);
+			updateManager.saveRecord(provider);
+		}
+		updateManager.saveRecord(providerM2M);
+	}
+	//Add ng-templates
+	var ngTemplate = new GlideRecord("sp_ng_template");
+	ngTemplate.addQuery("sp_widget", record.sys_id.toString());
+	ngTemplate.query();
+	while (ngTemplate.next())
+		updateManager.saveRecord(ngTemplate);
+	//Add embedded widgets
+	var widgetHTML = record.template.toString();
+	var regExp = new RegExp('&lt;sp-widget.*id=["\'](.*)["\']', 'g');
+	var widgetId = regExp.exec(widgetHTML);
+	while (widgetId){
+		var embeddedWidget = new GlideRecord("sp_widget");
+		embeddedWidget.addQuery("id", widgetId[1]);
+		embeddedWidget.query();
+		if (embeddedWidget.next()){
+			updateManager.saveRecord(embeddedWidget);
+			addWidgetDependencies(embeddedWidget);
+		}
+		widgetId = regExp.exec(widgetHTML);
+	}
+}
+
+//Recursively gather all required angular providers
+function gatherRequiredProviders(provider){
+	var updateManager = new GlideUpdateManager2();
+	var requiredProviderM2M = new GlideRecord("m2m_sp_ng_pro_sp_ng_pro");
+	requiredProviderM2M.addQuery("required_by", provider.sys_id.toString());
+	requiredProviderM2M.query();
+	while (requiredProviderM2M.next()) {
+		var requiredProvider = new GlideRecord("sp_angular_provider");
+		if (requiredProvider.get(requiredProviderM2M.requires.sys_id.toString())){
+			updateManager.saveRecord(requiredProvider);
+			gatherRequiredProviders(requiredProvider);
+		}
+		updateManager.saveRecord(requiredProviderM2M);
+	}
+	return;
+}
+
+//Recursively gather all columns and column rows
+function gatherColumnsAndColumnRowsAndInstances(row){
+	var updateManager = new GlideUpdateManager2();
+	//add columns
+	var column = new GlideRecord("sp_column");
+	column.addQuery("sp_row", row.sys_id.toString());
+	column.query();
+	while (column.next()) {
+		//Add widget instances
+		var widgetInstance = new GlideRecord("sp_instance");
+		widgetInstance.addQuery("sp_column", column.sys_id.toString());
+		widgetInstance.query();
+		while (widgetInstance.next()) {
+			//Add widget
+			var widget = new GlideRecord("sp_widget");
+			if (widget.get(widgetInstance.sp_widget.sys_id.toString())) {
+				updateManager.saveRecord(widget);
+				addWidgetDependencies(widget);
+			}
+			updateManager.saveRecord(widgetInstance);
+		}
+		//Add column rows
+		var columnRow = new GlideRecord("sp_row");
+		columnRow.addQuery("sp_column", column.sys_id.toString());
+		columnRow.query();
+		while (columnRow.next()) {
+			updateManager.saveRecord(columnRow);
+			gatherColumnsAndColumnRowsAndInstances(columnRow);
+		}
+		updateManager.saveRecord(column);
+	}
+	return;
+}
+
+//Recursively gather all child menu rectangle items
+function gatherChildMenuRectangleItems(menuRectangleItem){
+	var updateManager = new GlideUpdateManager2();
+	var childMenuRectangleItem = new GlideRecord("sp_rectangle_menu_item");
+	childMenuRectangleItem.addQuery("sp_rectangle_menu_item", menuRectangleItem.sys_id.toString());
+	childMenuRectangleItem.query();
+	while (childMenuRectangleItem.next()) {
+		updateManager.saveRecord(childMenuRectangleItem);
+		gatherChildMenuRectangleItems(childMenuRectangleItem);
+	}
+}
+
+//Add catalog item dependencies to the update set
+function addCatItemDependencies(record){
+	var updateManager = new GlideUpdateManager2();
+	var currTable = current.getTableName();
+	//Add variables
+	gatherVariables(record);
+	//Add available for
+	gatherAvailableFor(record);
+	//Add not available for
+	gatherNotAvailableFor(record);
+	//Add approved by group
+	gatherApprovedByGroup(record);
+	//Add approved by
+	gatherApprovedBy(record);
+	//Add catalog ui policies
+	gatherCatalogUiPolicies(record);
+	//Add catalog client scripts
+	gatherCatalogClientScripts(record);
+	//Add variable sets
+	var variableSetM2M = new GlideRecord("io_set_item");
+	variableSetM2M.addQuery("sc_cat_item", record.sys_id.toString());
+	variableSetM2M.query();
+	while (variableSetM2M.next()) {
+		//Add variable set
+		var variableSet = new GlideRecord("item_option_new_set");
+		variableSet.addQuery("sys_id", variableSetM2M.variable_set.toString());
+		variableSet.query();
+		if (variableSet.next()){
+			//Add variables
+			gatherVariables(variableSet);
+			//Add catalog ui policies
+			gatherCatalogUiPolicies(variableSet);
+			//Add catalog client scripts
+			gatherCatalogClientScripts(variableSet);
+			updateManager.saveRecord(variableSet);
+		}
+		updateManager.saveRecord(variableSetM2M);
+	}
+	//Add categories
+	var categoryM2M = new GlideRecord("sc_cat_item_category");
+	categoryM2M.addQuery("sc_cat_item", record.sys_id.toString());
+	categoryM2M.query();
+	while (categoryM2M.next()) {
+		//Add category
+		var category = new GlideRecord("sc_category");
+		category.addQuery("sys_id", categoryM2M.sc_category.toString());
+		category.query();
+		if (category.next())
+			updateManager.saveRecord(category);
+		updateManager.saveRecord(categoryM2M);
+	}
+	//Add catalogs
+	var catalogM2M = new GlideRecord("sc_cat_item_category");
+	catalogM2M.addQuery("sc_cat_item", record.sys_id.toString());
+	catalogM2M.query();
+	while (catalogM2M.next()) {
+		//Add catalog
+		var catalog = new GlideRecord("sc_category");
+		catalog.addQuery("sys_id", catalogM2M.sc_catalog.toString());
+		catalog.query();
+		if (catalog.next())
+			updateManager.saveRecord(catalog);
+		updateManager.saveRecord(catalogM2M);
+	}
+	//Add workflows
+	var workflow = new GlideRecord("wf_workflow");
+	workflow.addQuery("sys_id", record.workflow.toString());
+	workflow.query();
+	if (workflow.next()){
+		gatherChildWorkflows(workflow);
+		updateManager.saveRecord(workflow);
+	}
+	//Add rules (for order guides)
+	if (currTable == 'sc_cat_item_guide'){
+		var orderGuideRule = new GlideRecord("sc_cat_item_guide_items");
+		orderGuideRule.addQuery("guide", record.sys_id.toString());
+		orderGuideRule.query();
+		while (orderGuideRule.next()){
+			//Add rule catalog items
+			var ruleCatItem = new GlideRecord("sc_cat_item");
+			ruleCatItem.addQuery("sys_id", orderGuideRule.item.toString());
+			ruleCatItem.query();
+			if (ruleCatItem.next()){
+				addCatItemDependencies(ruleCatItem);
+				updateManager.saveRecord(ruleCatItem);
+			}
+			//Add item variable assignments
+			var varAssignment = new GlideRecord("sc_item_variable_assignment");
+			varAssignment.addQuery("rule", orderGuideRule.sys_id.toString());
+			varAssignment.query();
+			while (varAssignment.next())
+				updateManager.saveRecord(varAssignment);
+			updateManager.saveRecord(orderGuideRule);
+		}
+	}
+	//Add vendor catalog items
+	if (currTable == 'pc_software_cat_item' || currTable == 'pc_hardware_cat_item'){
+		var vendorCatItem = new GlideRecord("pc_vendor_cat_item");
+		vendorCatItem.addQuery("product_catalog_item", record.sys_id.toString());
+		vendorCatItem.query();
+		while (vendorCatItem.next())
+			updateManager.saveRecord(vendorCatItem);
+	}
+}
+
+//Gather variables for a catalog item or variable set
+function gatherVariables(record){
+	var updateManager = new GlideUpdateManager2();
+	var variable = new GlideRecord("item_option_new");
+	variable.addQuery("cat_item", record.sys_id.toString()).addOrCondition("variable_set", record.sys_id.toString());
+	variable.query();
+	while (variable.next()) {
+		//Add question choices
+		var questionChoice = new GlideRecord("question_choice");
+		questionChoice.addQuery("question", variable.sys_id.toString());
+		questionChoice.query();
+		while (questionChoice.next())
+			updateManager.saveRecord(questionChoice);
+		updateManager.saveRecord(variable);
+	}
+}
+
+//Gather available for user criteria
+function gatherAvailableFor(record){
+	var updateManager = new GlideUpdateManager2();
+	var availableForM2M = new GlideRecord("sc_cat_item_user_criteria_mtom");
+	availableForM2M.addQuery("sc_cat_item", record.sys_id.toString());
+    availableForM2M.query();
+	while (availableForM2M.next()) {
+		//Add user criteria
+		var userCriteria = new GlideRecord("user_criteria");
+		userCriteria.addQuery("sys_id", availableForM2M.user_criteria.toString());
+		userCriteria.query();
+		if (userCriteria.next())
+			updateManager.saveRecord(userCriteria);
+		updateManager.saveRecord(availableForM2M);
+		//Does not include users/groups/roles/etc records referenced within user criteria
+	}
+}
+
+//Gather not available for user criteria
+function gatherNotAvailableFor(record){
+	var updateManager = new GlideUpdateManager2();
+	var notAvailableForM2M = new GlideRecord("sc_cat_item_user_criteria_no_mtom");
+	notAvailableForM2M.addQuery("sc_cat_item", record.sys_id.toString());
+    notAvailableForM2M.query();
+	while (notAvailableForM2M.next()) {
+		//Add user criteria
+		var userCriteria = new GlideRecord("user_criteria");
+		userCriteria.addQuery("sys_id", notAvailableForM2M.user_criteria.toString());
+		userCriteria.query();
+		if (userCriteria.next())
+			updateManager.saveRecord(userCriteria);
+		updateManager.saveRecord(notAvailableForM2M);
+		//Does not include users/groups/roles/etc records referenced within user criteria
+	}
+}
+
+//Gather approved by group records
+function gatherApprovedByGroup(record){
+	var updateManager = new GlideUpdateManager2();
+	var approvedByGroupM2M = new GlideRecord("sc_cat_item_app_group");
+	approvedByGroupM2M.addQuery("sc_cat_item", record.sys_id.toString());
+    approvedByGroupM2M.query();
+	while (approvedByGroupM2M.next())
+		updateManager.saveRecord(approvedByGroupM2M);
+	//Does not include actual group records
+}
+
+//Gather approved by user records
+function gatherApprovedBy(record){
+	var updateManager = new GlideUpdateManager2();
+	var approvedByM2M = new GlideRecord("sc_cat_item_app_user");
+	approvedByM2M.addQuery("sc_cat_item", record.sys_id.toString());
+    approvedByM2M.query();
+	while (approvedByM2M.next())
+		updateManager.saveRecord(approvedByM2M);
+	//Does not include actual user records
+}
+
+//Gather catalog ui policies for a catalog item or variable set
+function gatherCatalogUiPolicies(record){
+	var updateManager = new GlideUpdateManager2();
+	var catUiPolicy = new GlideRecord("catalog_ui_policy");
+	catUiPolicy.addQuery("catalog_item", record.sys_id.toString()).addOrCondition("variable_set", record.sys_id.toString());
+	catUiPolicy.query();
+	while (catUiPolicy.next())
+		updateManager.saveRecord(catUiPolicy);
+	//Add ui policy actions
+	var catUiPolicyAction = new GlideRecord("catalog_ui_policy_action");
+	catUiPolicyAction.addQuery("catalog_item", record.sys_id.toString()).addOrCondition("variable_set", record.sys_id.toString());
+	catUiPolicyAction.query();
+	while (catUiPolicyAction.next())
+		updateManager.saveRecord(catUiPolicyAction);
+}
+
+//Gather catalog client scripts for a catalog item or variable set
+function gatherCatalogClientScripts(record){
+	var updateManager = new GlideUpdateManager2();
+	var catClientScript = new GlideRecord("catalog_script_client");
+	catClientScript.addQuery("cat_item", record.sys_id.toString()).addOrCondition("variable_set", record.sys_id.toString());
+	catClientScript.query();
+	while (catClientScript.next())
+		updateManager.saveRecord(catClientScript);
+}
+
+//Recursively gather all child workflows
+function gatherChildWorkflows(workflow){
+	var updateManager = new GlideUpdateManager2();
+	//Get published workflow version
+	var workflowVersion = new GlideRecord("wf_workflow_version");
+	workflowVersion.addQuery("workflow", workflow.sys_id.toString());
+	workflowVersion.addQuery("published", true);
+	workflowVersion.query();
+	while (workflowVersion.next()) {
+		//Get sub-workflow instances
+		var subWorkflowInstance = new GlideRecord("wf_workflow_instance");
+		subWorkflowInstance.addQuery("workflow_version", workflowVersion.sys_id.toString());
+		subWorkflowInstance.query();
+		while (subWorkflowInstance.next()){
+			//Get subWorkflows
+			var subWorkflow = new GlideRecord("wf_workflow");
+			subWorkflow.addQuery("sys_id", subWorkflowInstance.workflow.toString());
+			subWorkflow.query();
+			if (subWorkflow.next()) {
+				gatherChildWorkflows(subWorkflow);
+				updateManager.saveRecord(subWorkflow);
+			}
+		}
+	}
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;ben.hollifield_SHARE&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2013-10-21 00:09:52&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;131e99ed49e8950002ad45cc9609026f&lt;/sys_id&gt;&lt;sys_mod_count&gt;94&lt;/sys_mod_count&gt;&lt;sys_name&gt;Add to Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_131e99ed49e8950002ad45cc9609026f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;ben.hollifield&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-04-11 02:22:12&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;true&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload><payload_hash/><remote_update_set display_value="Add to Update Set v2.6">ce3ca3aa4f332300ad404a10a310c70b</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-26 16:08:28</sys_created_on><sys_id>823ca3aa4f332300ad404a10a310c70c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>165c3ec0dda0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-26 16:08:28</sys_updated_on><table>global</table><target_name>Add to Update Set</target_name><type>UI Action</type><update_domain>global</update_domain><update_guid/><update_guid_history/><update_set/><view/></sys_update_xml></unload>
