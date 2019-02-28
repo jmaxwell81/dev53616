@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-02-28 21:01:03"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description>Service Portal Notification Preferences Widget</description><inserted/><name>Notification Preferences Widget</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>7bb4f2174f332300ad404a10a310c76d</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>1b520f9f4f332300ad404a10a310c789</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_4bb14c04db8323007ce85385ca96194e</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>8</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">4fb14c04db8323007ce85385ca96194a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:52:06</sys_created_on><sys_id>4bb14c04db8323007ce85385ca96194e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_4bb14c04db8323007ce85385ca96194e</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:52:30</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>1953437098</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>13520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3a10000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>2</target_name><type>Column</type><update_domain>global</update_domain><update_guid>c1d10080838323002b6f80c5779624dc</update_guid><update_guid_history>c1d10080838323002b6f80c5779624dc:1953437098,7c94fed3763323008c8cdcf516559673:-443460322,c1d10080838323002b6f80c5779624dc:1953437098,07b14c047383230015d410ac42d98e4f:984163436</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_page_a2614cc4db8323007ce85385ca9619b6</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>notification_preferences</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:51:08</sys_created_on><sys_id>a2614cc4db8323007ce85385ca9619b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>notification_preferences</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_a2614cc4db8323007ce85385ca9619b6</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:51:08</sys_updated_on><title>Notification Preferences</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=a2614cc4db8323007ce85385ca9619b6"/></record_update>]]></payload><payload_hash>1542751167</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>1b520f9f4f332300ad404a10a310c78c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a37f0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>notification_preferences</target_name><type>Page</type><update_domain>global</update_domain><update_guid>05818cc4b5832300f9b3f011f9463be1</update_guid><update_guid_history>05818cc4b5832300f9b3f011f9463be1:1542751167,c994fed331332300d464df3be753bdcd:803063987,05818cc4b5832300f9b3f011f9463be1:1542751167</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_ng_template_03aaff73dbb223007ce85385ca961966</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;noti_category_base_template&lt;/id&gt;&lt;sp_widget display_value="Notification Preferences"&gt;080ab773dbb223007ce85385ca96191b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:21:41&lt;/sys_created_on&gt;&lt;sys_id&gt;03aaff73dbb223007ce85385ca961966&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;noti_category_base_template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_03aaff73dbb223007ce85385ca961966&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-11 21:21:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div id="subscribe-focus{{$index}}" class="col-xs-12 col-md-12 cm-sub-name" data-ng-click="c.catDetails(subObject.sys_id, subObject.name, $index)"&gt;
+  &lt;div class="col-xs-8 col-md-8 cm-sub-name"&gt;
+  &lt;h4 class="cm-weight-normal m-t-none"&gt;
+    &lt;a class="noti-text"&gt;{{subObject.name}}&lt;/a&gt;&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xs-4 col-md-4 cm-align-end cm-subscribe-btn"&gt;
+  &lt;a class="cm-subscribe-hover noti-text" href="" aria-label="more" title="more"&gt;
+    &lt;i class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload><payload_hash>640883572</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>1f520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a34c0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>noti_category_base_template</target_name><type>Angular ng-template</type><update_domain>global</update_domain><update_guid>25ca33b3b8b2230039fba1effdca0a7c</update_guid><update_guid_history>25ca33b3b8b2230039fba1effdca0a7c:640883572,3494fed383332300945db68b837e5b9d:1562159293,25ca33b3b8b2230039fba1effdca0a7c:640883572</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_03b14c04db8323007ce85385ca961950</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>3</order><size>2</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">4fb14c04db8323007ce85385ca96194a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:52:06</sys_created_on><sys_id>03b14c04db8323007ce85385ca961950</sys_id><sys_mod_count>1</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_03b14c04db8323007ce85385ca961950</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:52:22</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>1980480114</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>57520f9f4f332300ad404a10a310c78a</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a39a0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>3</target_name><type>Column</type><update_domain>global</update_domain><update_guid>4fc14480d38323007b5aadc0621c5362</update_guid><update_guid_history>4fc14480d38323007b5aadc0621c5362:1980480114,ec94fed30533230045f3e2e221b7e95f:-416417306,4fc14480d38323007b5aadc0621c5362:1980480114,cbb14c041e83230079c85b1fff729850:-1829850351</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_ng_template_bfcab773dbb223007ce85385ca9619fa</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;noti_notification_base_template&lt;/id&gt;&lt;sp_widget display_value="Notification Preferences"&gt;080ab773dbb223007ce85385ca96191b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:22:17&lt;/sys_created_on&gt;&lt;sys_id&gt;bfcab773dbb223007ce85385ca9619fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;noti_notification_base_template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_bfcab773dbb223007ce85385ca9619fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-11 21:22:17&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="cm-sub-name cm-settings-item hidden-sm hidden-xs self-clear hover-effect-li" data-ng-repeat="noti in c.notifObjects" data-ng-click="c.notiDetails(noti, $index)"&gt;
+  &lt;div class="input-switch"&gt;
+    &lt;div id="label_{{noti.notification.sys_id}}" class="col-xs-9 col-sm-6 cm-item-name"&gt;
+      &lt;h3 class='noti-title'&gt;{{noti.name}}&lt;/h3&gt;
+      &lt;h5 class='noti-subtitle'&gt;{{noti.deviceNames}}&lt;/h5&gt;
+     &lt;/div&gt;
+      &lt;div class="cm-align-end col-md-3 col-md-offset-4 col-lg-1 col-lg-offset-5 top-30"&gt;
+      &lt;div class="input-switch"&gt;
+       &lt;a id="subscribe-focus{{$index}}" class="cm-subscribe-hover noti-text" aria-label="more" title="more"&gt;
+    	&lt;i class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;
+  	   &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;    
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload><payload_hash>1732546043</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>57520f9f4f332300ad404a10a310c78c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3690000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>noti_notification_base_template</target_name><type>Angular ng-template</type><update_domain>global</update_domain><update_guid>16ea33b3d0b223007e66834f0ef31b9b</update_guid><update_guid_history>16ea33b3d0b223007e66834f0ef31b9b:1732546043,c994fed3fc33230001c7ad01546807ae:1176205394,16ea33b3d0b223007e66834f0ef31b9b:1732546043</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_ng_template_00fa33b3dbb223007ce85385ca9619e0</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;noti_device_subs_template&lt;/id&gt;&lt;sp_widget display_value="Notification Preferences"&gt;080ab773dbb223007ce85385ca96191b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:23:08&lt;/sys_created_on&gt;&lt;sys_id&gt;00fa33b3dbb223007ce85385ca9619e0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;noti_device_subs_template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_00fa33b3dbb223007ce85385ca9619e0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-11 21:23:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="cm-settings-item hidden-sm hidden-xs self-clear" data-ng-repeat="devi in c.notifSubDevices.records" style="padding-bottom:10px;"&gt;
+  &lt;div&gt;
+    &lt;div id="switch_label_{{devi.sys_id}}" class="col-xs-9 col-sm-6 cm-item-name"&gt;{{devi.channel.name}}
+    &lt;button class="btn btn-link" ng-click="c.openFormModal('cmn_notif_message',devi.sys_id,'Apply Conditions')" aria-haspopup="dialog" role="button" ng-show="c.notifSubDevices.type == 'system' &amp;&amp; devi.sys_id != ''"&gt;Edit&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cm-item-checkbox col-md-2 col-md-offset-4 col-lg-1 col-lg-offset-5"&gt;
+      &lt;div class="input-switch" style="width:50px;"&gt;
+        &lt;input aria-labelledby="switch_label_{{devi.channel.sys_id}}" 
+               id="switch{{devi.channel.sys_id}}" 
+               type="checkbox" 
+               name="switch{{devi.sys_id}}" 
+               data-ng-model="devi.logical_active" 
+               data-ng-change="c.toggleNotificationDevice(devi.logical_active,devi.channel.sys_id,c.notifSubDevices.notification.sys_id,devi.sys_id,devi.table)" 
+               data-ng-disabled="devi.readonly" &gt;
+        &lt;label aria-hidden="true" class="switch" for="switch{{devi.channel.sys_id}}"&gt;&amp;#8203;&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload><payload_hash>1313736378</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>5b520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3710000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>noti_device_subs_template</target_name><type>Angular ng-template</type><update_domain>global</update_domain><update_guid>3e1bff3353b22300e0e378a69b02532a</update_guid><update_guid_history>3e1bff3353b22300e0e378a69b02532a:1313736378,b494fed3ad3323006a55f9ff65b79497:694650385,3e1bff3353b22300e0e378a69b02532a:1313736378</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_0fb14c04db8323007ce85385ca96194c</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>2</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">4fb14c04db8323007ce85385ca96194a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:52:06</sys_created_on><sys_id>0fb14c04db8323007ce85385ca96194c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_0fb14c04db8323007ce85385ca96194c</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:52:16</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>405719406</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>5f520f9f4f332300ad404a10a310c78a</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3930000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>1</target_name><type>Column</type><update_domain>global</update_domain><update_guid>6dc10008d383230003d28783a04ddbdc</update_guid><update_guid_history>6dc10008d383230003d28783a04ddbdc:405719406,6894fed35333230022bd48a76311a866:-1991178014,6dc10008d383230003d28783a04ddbdc:405719406,0fb14c0478832300b15a94f0decf674d:890356237</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_ng_template_b34bbbb3db3223007ce85385ca961904</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;noti_device_base_template&lt;/id&gt;&lt;sp_widget display_value="Notification Preferences"&gt;080ab773dbb223007ce85385ca96191b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:24:31&lt;/sys_created_on&gt;&lt;sys_id&gt;b34bbbb3db3223007ce85385ca961904&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;noti_device_base_template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_b34bbbb3db3223007ce85385ca961904&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-11 23:23:31&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="cm-settings-item hidden-sm hidden-xs self-clear" data-ng-repeat="devi in c.notifDevices"&gt;
+  &lt;div&gt;
+    &lt;div id="switch_label_{{devi.sys_id}}" class="col-xs-9 col-sm-6 cm-item-name"&gt;{{devi.name}}
+    &lt;button class="btn btn-link" ng-click="c.openFormModal('cmn_notif_device',devi.sys_id,'Edit Device')" aria-haspopup="dialog" role="button"&gt;Edit&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cm-item-checkbox col-md-2 col-md-offset-4 col-lg-1 col-lg-offset-5"&gt;
+      &lt;div class="input-switch" style="width:50px;"&gt;
+        &lt;input aria-labelledby="switch_label_{{devi.sys_id}}" 
+               id="switch{{devi.sys_id}}" 
+               type="checkbox" 
+               name="switch{{devi.sys_id}}" 
+               data-ng-model="devi.logical_active" 
+               data-ng-change="c.toggleDevices(devi.sys_id,devi.logical_active)" 
+               data-ng-disabled="devi.readonly" &gt;
+        &lt;label aria-hidden="true" class="switch" for="switch{{devi.sys_id}}"&gt;&amp;#8203;&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload><payload_hash>-2104859624</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>93520f9f4f332300ad404a10a310c78c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3b60000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>noti_device_base_template</target_name><type>Angular ng-template</type><update_domain>global</update_domain><update_guid>0ea69484c4c323009ad0e5437917e4ce</update_guid><update_guid_history>0ea69484c4c323009ad0e5437917e4ce:-2104859624,8d94fed3ce332300dc3b3605d98d5ca8:-2139198097,0ea69484c4c323009ad0e5437917e4ce:-2104859624,9276d8841dc323004316e62c2b2a70cd:2122225986,1b6bbbb315b22300ddff1382a61b1a0d:-2104859624</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_instance_5fd18804db8323007ce85385ca96194d</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">4bb14c04db8323007ce85385ca96194e</sp_column><sp_widget display_value="Notification Preferences">080ab773dbb223007ce85385ca96191b</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:52:40</sys_created_on><sys_id>5fd18804db8323007ce85385ca96194d</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_5fd18804db8323007ce85385ca96194d</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:52:40</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=5fd18804db8323007ce85385ca96194d"/></record_update>]]></payload><payload_hash>709815656</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>97520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3ae0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name/><type>Instance</type><update_domain>global</update_domain><update_guid>53d1880435832300fbeeec366068934f</update_guid><update_guid_history>53d1880435832300fbeeec366068934f:709815656,3894fed32f33230084da22c05701e771:779311985,53d1880435832300fbeeec366068934f:709815656</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_widget_080ab773dbb223007ce85385ca96191b</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($timeout,$interval,$http,$rootScope, $location, $anchorScroll, spModal,i18n) {
+	/* widget controller */
+	
+	var c = this,
+			baseApiUrl = '/api/now/v1/notification/preference',
+			baseUrl = c.data.instanceName;
+	
+
+	c.enableNotifications = true;
+	c.showNotifications = false;
+	c.showCategoryNotifications = false;
+	c.showCategoryNotificationsPersonal = false;
+	c.showCategoryNotificationDevices = false;
+	c.showCategories = true;
+	c.showDevices = false;
+	c.notifDevices = {};
+	c.subObjects = [];
+	c.subNotifObjects = [];
+	c.notifObjects = [];
+	c.catNotifications = [];
+	c.subscriptions = [];
+	c.notifSubDevices = [];
+	c.backText = '';
+	c.lastSection = {};
+	
+	c.toggleNotifications = function(e){		
+			$http.post(baseApiUrl + '/all', {enable_notifications: !c.enableNotifications})
+			.then(function(response){
+					getUserNotificationPreference();					
+		  });		
+	};
+	
+	c.toggleDevices = function(id,flag){		
+		var channel_data = {};
+		channel_data.sys_id = id;
+		channel_data.active = flag;
+
+		$http.post(baseApiUrl + '/channel', {channel: channel_data})
+			.then(function(response){			
+					//console.log(response);					
+		  });		
+	};
+	
+	c.goBack = function(where){
+		
+		if(where.name == 'all'){
+			c.showNotifications = false;
+			c.showCategories = true;
+			c.showDevices = false;
+			c.showCategoryNotifications = false;
+			c.showCategoryNotificationsPersonal = false;
+			c.showCategoryNotificationDevices = false;
+		}else{
+			c.backText = 'Notifications';
+		    c.lastSection.name = 'all';
+			c.showCategoryNotificationDevices = false;
+			getNotifications(where.id,where.name);
+		}
+		
+	};
+	
+	function getUserNotificationPreference(){
+		$http.get(baseApiUrl + '/channel')
+			.then(function(data){			
+			if(data.data &amp;&amp; data.data.result){
+			c.enableNotifications = data.data.result.enable_notifications;
+			c.notifDevices = data.data.result.channels;	
+			}
+		});
+	}
+	
+	
+	c.showTab = function(tab, e){
+		if(tab == 'n'){
+			c.showNotifications = false;
+			c.showCategories = true;
+			c.showDevices = false;
+			c.showCategoryNotifications = false;
+			c.showCategoryNotificationsPersonal = false;
+			c.showCategoryNotificationDevices = false;
+			$('.cm-noti-tab').addClass('active');
+		    $('.cm-chan-tab').removeClass('active');
+		}else{
+			c.showNotifications = false;
+			c.showCategories = false;
+			c.showDevices = true;
+			c.showCategoryNotifications = false;
+			c.showCategoryNotificationsPersonal = false;
+			c.showCategoryNotificationDevices = false;
+			$('.cm-noti-tab').removeClass('active');
+		    $('.cm-chan-tab').addClass('active');
+		}
+	};
+		
+	
+	function getNotifications(id,name){
+	c.showCategories = false;
+	$http.get(baseApiUrl + '?category=' + id + '&amp;sysparm_limit=100&amp;sysparm_offset=0' )
+	.then(function(data){
+		if(data.data &amp;&amp; data.data.result){
+			var prefObj = data.data.result.preferences;
+			var sysNotifications = [];
+			var personalNotifications = [];
+			
+			for(var m = 0 ; m &lt; prefObj.length ; m++){
+				var deviceNames = '';
+				var arr = prefObj[m].records;
+				angular.forEach(arr,function(rec,index){
+					if(rec.logical_active == true)
+						if(index === arr.length - 1)
+						deviceNames += rec.channel.name.toString();
+					else
+						deviceNames += rec.channel.name.toString() + ', ';
+				});
+				
+				prefObj[m].deviceNames = deviceNames.replace(/,\s*$/, "");
+				prefObj[m].categoryName = name;
+				if(prefObj[m].type == 'system'){
+					sysNotifications.push(prefObj[m]);
+				}else{
+					personalNotifications.push(prefObj[m]);
+					c.showCategoryNotificationsPersonal = true;
+				}
+			}
+			c.notifObjects = sysNotifications;
+			c.subscriptions = personalNotifications;
+			c.showCategoryNotifications = true;
+		}
+		});
+  }
+	
+	c.openFormModal = function(table, sysId, title){
+		 spModal.open({
+            title: title,
+            widget: 'widget-form',
+			      buttons: [],
+           widgetInput: { table: table, sys_id: sysId, view: 'concourse_notification_preferences'}
+        }).then(function () {
+            //console.log('widget dismissed');
+        });
+	};
+	
+	c.toggleNotificationDevice = function(active,channel_id,notification_id,sys_id,table){
+		
+		var data = {};
+		data.active = active;
+		data.channel_id = channel_id;
+		data.notification_id = notification_id;
+		data.sys_id = (sys_id != '')? sys_id : null;
+		data.table = table;
+		
+		$http.post(baseApiUrl, {preference : data})
+			.then(function(response){
+				//console.log(data);			
+		});
+	};
+	
+	///init///////////////////////////////
+	$http.get(baseApiUrl + '/category?sysparm_limit=100&amp;sysparm_offset=0')
+		.then(function(data){
+		if(data.data &amp;&amp; data.data.result){
+			c.subObjects = data.data.result.categories;
+			c.selectedSubObject = c.subObjects[0];
+			getUserNotificationPreference();			
+		}
+	});	
+   /////////////////////////////////////////////////
+
+	c.catDetails = function(id, name, idx){
+		c.backText = 'Notifications';
+		c.lastSection.name = 'all';
+		c.lastSection.id = id;
+		getNotifications(id, name);	
+	};
+	
+	c.notiDetails = function(obj, idx){
+		c.backText = obj.categoryName;
+		c.lastSection.name = obj.categoryName;
+		c.lastSection.id = obj.category.sys_id;
+		c.notificationName = obj.name;
+		c.notifSubDevices = obj;
+		c.showCategoryNotificationDevices = true;
+		c.showCategoryNotificationsPersonal = false;
+		
+	};
+
+	//////Responsiveness
+	function resizeDivs(b , c){
+		b = b || '';
+		c = c || '';
+		$('.cm-subs-noti-pref .cm-subs-list-item .content-icon').css('padding-right', b);
+		$('.cm-subs-noti-pref .cm-subs-list-item .content-header').css('width', c);	
+	}
+
+	var interval;
+	function windowResized() {
+		var viewPortWidth = $(window).width();
+		if (viewPortWidth &lt; 380){
+			if(interval){
+				$interval.cancel(interval);
+				interval = null;
+			}	
+			interval = $interval(function(){
+				resizeDivs('5px','80%');
+			}, 50);
+		}
+		else if (viewPortWidth &lt; 660){
+			if(interval){
+				$interval.cancel(interval);
+				interval = null;
+			}	
+			interval = $interval(function(){
+				resizeDivs('10px','85%');
+			}, 50);
+		}
+		else if (viewPortWidth &lt; 1210){
+			if(interval){
+				$interval.cancel(interval);
+				interval = null;
+			}	
+			interval = $interval(function(){
+				resizeDivs('','90%');
+			}, 50);
+		}
+		else{
+			$interval.cancel(interval);
+			interval = null;
+			resizeDivs();
+		}
+	}
+
+	var timeout;
+	$(window).resize(function() {
+		if(timeout){
+			$timeout.cancel(timeout);
+			timeout = null;
+		}
+		timeout = $timeout(windowResized, 50);
+	});
+
+	$(document).ready(function(){
+		timeout = $timeout(windowResized, 50); 
+	});
+
+	//--/
+
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$cm-switch-bg : #71E279;&amp;#13;
+$cm-switch-box-shadow: inset 0 1px 3px 0 #828890;&amp;#13;
+&amp;#13;
+.cm-subs-noti-pref {&amp;#13;
+  .panel {&amp;#13;
+    border:none;&amp;#13;
+    box-shadow: none;&amp;#13;
+  }&amp;#13;
+  .cm-notif-pref-header{&amp;#13;
+    display: inline-flex;&amp;#13;
+    .cm-recv-notif{&amp;#13;
+      display: inherit;&amp;#13;
+      padding-top: 50px;&amp;#13;
+      padding-left: 10px;&amp;#13;
+      p{&amp;#13;
+        font-weight: 300;&amp;#13;
+        font-size: 14px;  &amp;#13;
+        padding-top: 5px;        &amp;#13;
+      }&amp;#13;
+      .input-switch{&amp;#13;
+        padding-left: 10px;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .cm-widget-header {&amp;#13;
+    width: 75%;&amp;#13;
+    .main-header {&amp;#13;
+      font-weight: normal;&amp;#13;
+    }&amp;#13;
+    .sub-header {&amp;#13;
+      font-weight: 300;&amp;#13;
+      font-size: 18px;&amp;#13;
+    }&amp;#13;
+    .sub-header {&amp;#13;
+      font-size: $csm-primary-text-size + 4px;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .cm-left-pane {&amp;#13;
+    margin-top: 65px;&amp;#13;
+    .cm-list-item {&amp;#13;
+      padding: 5px 0px;&amp;#13;
+    }&amp;#13;
+    .cm-list-item.active {&amp;#13;
+      color: $link-color;&amp;#13;
+      font-weight: 500;&amp;#13;
+      cursor: auto;&amp;#13;
+    }&amp;#13;
+    .cm-list-item:not(.active){&amp;#13;
+      cursor: pointer;&amp;#13;
+    }&amp;#13;
+    .cm-list-item:not(.active):hover {&amp;#13;
+      text-decoration: underline;&amp;#13;
+    }&amp;#13;
+  }&amp;#13;
+  .cm-right-pane {&amp;#13;
+    .cm-widget-tabs {&amp;#13;
+      padding: 15px 0px 0px;&amp;#13;
+      .nav-tabs {&amp;#13;
+        border-bottom: 1px solid #ddd;&amp;#13;
+        margin-bottom: -1px;&amp;#13;
+      }&amp;#13;
+      .nav-tabs {&amp;#13;
+        border-color: $csm-border-color;&amp;#13;
+      }&amp;#13;
+      .nav-tabs &amp;gt; li {&amp;#13;
+        padding: 0px 30px;&amp;#13;
+        font-size : 18px;&amp;#13;
+        font-weight: 400;&amp;#13;
+        line-height: 29px;&amp;#13;
+      }&amp;#13;
+      .nav-tabs &amp;gt; li.widget-collapse {&amp;#13;
+        padding-right: 0px;&amp;#13;
+      }&amp;#13;
+      .nav-tabs  &amp;gt; li:not(:last-of-type){&amp;#13;
+        // margin-right: 55px;&amp;#13;
+      }&amp;#13;
+      .nav-tabs  &amp;gt; li  &amp;gt; a {&amp;#13;
+        border: none;&amp;#13;
+        padding: 10px 0px 10px;&amp;#13;
+      }&amp;#13;
+      .nav-tabs  &amp;gt; li.active {&amp;#13;
+        border-bottom: 2px solid $link-color;&amp;#13;
+        a {&amp;#13;
+          color: $brand-primary;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .nav-tabs  &amp;gt; li.active &amp;gt; a {&amp;#13;
+        background-color: inherit;&amp;#13;
+      }&amp;#13;
+&amp;#13;
+      .hover-effect:hover {&amp;#13;
+        background-color: initial;&amp;#13;
+        //border-bottom: 2px solid $text-color;&amp;#13;
+        cursor: pointer;&amp;#13;
+      }&amp;#13;
+&amp;#13;
+    }&amp;#13;
+    .cm-widget-body {&amp;#13;
+      padding-top: 20px;&amp;#13;
+      padding-left: 0px;&amp;#13;
+      padding-right: 0px;&amp;#13;
+      padding-bottom: 0px;      &amp;#13;
+    }&amp;#13;
+    .cm-widget-body.cm-mobile {&amp;#13;
+      padding: 0px;&amp;#13;
+      .cm-settings-parent {&amp;#13;
+        .cm-settings-name {&amp;#13;
+          margin: 0px;&amp;#13;
+          padding: 10px 0px 15px;&amp;#13;
+          font-weight: normal;&amp;#13;
+          .cm-toggle-icon {&amp;#13;
+            color: #ccc;&amp;#13;
+            font-size: 22px;&amp;#13;
+          }&amp;#13;
+          .cm-toggle-icon {&amp;#13;
+            color: $csm-icon-color;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .cm-settings-parent:not(:last-of-type) .cm-settings-name{&amp;#13;
+        border-bottom: 1px solid #ddd;&amp;#13;
+      }&amp;#13;
+      .cm-settings-parent:not(:last-of-type) .cm-settings-name{&amp;#13;
+        border-bottom: 1px solid $csm-border-color;&amp;#13;
+      }&amp;#13;
+      .cm-settings-main {&amp;#13;
+        margin-bottom: 20px;&amp;#13;
+        .panel.csm-tile{&amp;#13;
+          border-top: none;&amp;#13;
+        }&amp;#13;
+        .cm-settings-panel .cm-settings-body {&amp;#13;
+          border : none;&amp;#13;
+          padding: 0px;&amp;#13;
+          margin: 0px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .cm-subs {&amp;#13;
+      .panel-body {&amp;#13;
+        padding-bottom: 10px;&amp;#13;
+      }&amp;#13;
+      .cm-subs-list {&amp;#13;
+        .cm-subs-list-item {&amp;#13;
+          padding: 15px 0px 0px;&amp;#13;
+          .cm-sub-name {&amp;#13;
+            .content-icon {&amp;#13;
+              display: inline-block;&amp;#13;
+              float: left;&amp;#13;
+              font-size: 22px;&amp;#13;
+              vertical-align: top;&amp;#13;
+              color: $link-color;&amp;#13;
+              padding-right: 15px;&amp;#13;
+              .cm-green{&amp;#13;
+                color: #5cb85c;&amp;#13;
+              }&amp;#13;
+            }&amp;#13;
+            .content-header {&amp;#13;
+              display: inline-block;&amp;#13;
+              width: 90%;&amp;#13;
+              word-wrap: break-word;&amp;#13;
+              .cm-subhead {&amp;#13;
+                margin-top: 3px;&amp;#13;
+                margin-bottom: 5px;&amp;#13;
+                line-height: 16px;&amp;#13;
+                font-weight: 400;&amp;#13;
+                a, a:hover{&amp;#13;
+                  color: $text-muted;&amp;#13;
+                }&amp;#13;
+              }&amp;#13;
+              .info {&amp;#13;
+                a, a:hover{&amp;#13;
+                  color: $text-color;&amp;#13;
+                }&amp;#13;
+              }&amp;#13;
+            }&amp;#13;
+            &amp;#13;
+          .cm-subscribe-btn {&amp;#13;
+            .fa {&amp;#13;
+              font-size: 16px;&amp;#13;
+              margin-right: 3px;&amp;#13;
+            }&amp;#13;
+          }        	&amp;#13;
+          .cm-sub-desc {&amp;#13;
+            line-height: 23px;&amp;#13;
+            padding-left: 30px;&amp;#13;
+            a, a:hover {&amp;#13;
+              color: $text-color;&amp;#13;
+            }&amp;#13;
+          }&amp;#13;
+          .cm-subscribe-hover {&amp;#13;
+            .cm-hide-me {&amp;#13;
+              display: none;&amp;#13;
+            }&amp;#13;
+          }&amp;#13;
+          .cm-subscribe-hover:hover {&amp;#13;
+            .cm-show-me {&amp;#13;
+              display: none;&amp;#13;
+            }    &amp;#13;
+            .cm-hide-me {&amp;#13;
+              display: initial;&amp;#13;
+            }&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        .cm-subs-list-item:not(:last-of-type){&amp;#13;
+          padding: 10px 0px;&amp;#13;
+          border-bottom: 1px solid #ddd; &amp;#13;
+        }&amp;#13;
+        .cm-subs-list-item:not(:last-of-type){&amp;#13;
+          border-bottom: 1px solid $csm-border-color; &amp;#13;
+        } &amp;#13;
+      }&amp;#13;
+      .cm-no-sub {&amp;#13;
+        text-align: center;&amp;#13;
+        height: 200px;&amp;#13;
+        .cm-message-text {&amp;#13;
+          margin-top: 75px;&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .cm-network-tab{&amp;#13;
+        font-style: italic;&amp;#13;
+        color: #A9A9A9;&amp;#13;
+        height: 300px;        &amp;#13;
+        .cm-network-btn{&amp;#13;
+          font-style:normal;&amp;#13;
+          color: normal;          &amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+       .hover-effect-li:not(:last-of-type){&amp;#13;
+        border-bottom: 1px solid #ddd;&amp;#13;
+      }&amp;#13;
+      .hover-effect-li:hover{&amp;#13;
+              background-color: rgba(66, 139, 202, 0.3);&amp;#13;
+        .noti-text{&amp;#13;
+         color: #000; &amp;#13;
+        }&amp;#13;
+          }   &amp;#13;
+    }&amp;#13;
+    .cm-settings {&amp;#13;
+      margin-bottom: 10px;&amp;#13;
+      .panel-body {&amp;#13;
+        padding: 20px 20px 10px;&amp;#13;
+      }&amp;#13;
+      .cm-settings-header {&amp;#13;
+        padding-bottom: 10px;&amp;#13;
+        .cm-settings-name {&amp;#13;
+          display: inline-block;&amp;#13;
+        }&amp;#13;
+        .input-switch {&amp;#13;
+          padding-top: 6px;&amp;#13;
+          float: right;&amp;#13;
+          padding-right: 15px;&amp;#13;
+          width: 60px;          &amp;#13;
+          label {&amp;#13;
+            cursor: pointer;&amp;#13;
+            box-shadow: $cm-switch-box-shadow;&amp;#13;
+            border-radius: 3px;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .cm-settings-body {&amp;#13;
+        padding: 15px 0px 0px;&amp;#13;
+        //border: 1px solid #ddd;&amp;#13;
+        .cm-settings-item-head {&amp;#13;
+          padding: 5px 0px;&amp;#13;
+          font-weight: bold;&amp;#13;
+        }&amp;#13;
+        .cm-settings-item {&amp;#13;
+          padding: 7px 0px;&amp;#13;
+          border-bottom: 1px solid $csm-border-color;&amp;#13;
+          .cm-item-name {&amp;#13;
+            padding-top: 5px;&amp;#13;
+          }&amp;#13;
+          .cm-item-checkbox {&amp;#13;
+            input {&amp;#13;
+              margin-left: auto;&amp;#13;
+              margin-right: auto;&amp;#13;
+            }&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+        .cm-settings-item:last-child{&amp;#13;
+          background-color: #eee;&amp;#13;
+          border-bottom: 0px; &amp;#13;
+        }&amp;#13;
+&amp;#13;
+      }&amp;#13;
+      .cm-settings-body {&amp;#13;
+        border: 1px solid $csm-border-color;&amp;#13;
+      }&amp;#13;
+      .cm-settings-parent {&amp;#13;
+        .cm-settings-name {&amp;#13;
+          font-weight: 400;&amp;#13;
+          margin: 0px;&amp;#13;
+          padding: 17px 20px 17px 0px;&amp;#13;
+          .fa {&amp;#13;
+            font-size: 22px;&amp;#13;
+            color: #ccc;&amp;#13;
+          }&amp;#13;
+          .fa {&amp;#13;
+            font-size: $csm-primary-text-size + 8px;&amp;#13;
+            color: $csm-icon-color;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+      .cm-settings-parent:not(:last-of-type){&amp;#13;
+        border-bottom: 1px solid #ddd;&amp;#13;
+      }&amp;#13;
+      .cm-settings-parent:not(:last-of-type){&amp;#13;
+        border-bottom: 1px solid $csm-border-color;&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .cm-noti-actions {&amp;#13;
+      margin-top: 5px;&amp;#13;
+      .cm-btn-container.row {&amp;#13;
+        margin-left: -5px;&amp;#13;
+        margin-right: -5px;&amp;#13;
+        .cm-save {&amp;#13;
+          margin-left: 10px;&amp;#13;
+        }&amp;#13;
+        .cm-action-btn {&amp;#13;
+          margin-top: 10px;&amp;#13;
+          padding-left: 5px;&amp;#13;
+          padding-right: 5px;&amp;#13;
+          .btn {&amp;#13;
+            width: 100%;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+    }&amp;#13;
+    .cm-list-pagination {&amp;#13;
+      text-align: center;&amp;#13;
+      text-align: -webkit-center;&amp;#13;
+    }&amp;#13;
+&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  .cm-align-center {&amp;#13;
+    text-align: center;&amp;#13;
+  }&amp;#13;
+  .cm-align-end {&amp;#13;
+    text-align: end;&amp;#13;
+    text-align: -webkit-right;&amp;#13;
+  }&amp;#13;
+  .cm-display-none {&amp;#13;
+    display: none;&amp;#13;
+  }&amp;#13;
+  .cm-weight-normal {&amp;#13;
+    font-weight: normal;&amp;#13;
+  }&amp;#13;
+  .cm-alert {&amp;#13;
+    margin-bottom: 0px;&amp;#13;
+  }&amp;#13;
+  .cm-no-border {&amp;#13;
+    border: none !important;&amp;#13;
+  }&amp;#13;
+  .self-clear:after {&amp;#13;
+    content: "";&amp;#13;
+    clear: both;&amp;#13;
+    display: table;&amp;#13;
+  }&amp;#13;
+&amp;#13;
+  //&amp;#13;
+  .input-switch label {&amp;#13;
+    cursor: pointer;&amp;#13;
+    box-shadow: $cm-switch-box-shadow;&amp;#13;
+    border-radius: 3px;&amp;#13;
+&amp;#13;
+  }&amp;#13;
+  .input-switch input[type=checkbox]:checked  ~ .switch{&amp;#13;
+    background-color: $cm-switch-bg;&amp;#13;
+  }&amp;#13;
+  .input-switch input[type=checkbox]  ~ .switch {&amp;#13;
+    height: 28px;&amp;#13;
+  }&amp;#13;
+  .cm-widget-body.cm-mobile .input-switch input[type=checkbox]  ~ .switch {&amp;#13;
+    height: 28px;&amp;#13;
+  }&amp;#13;
+  .input-switch input[type=checkbox]:checked  ~ .switch:before {&amp;#13;
+    left: 20.5px;&amp;#13;
+  }&amp;#13;
+}&amp;#13;
+  &amp;#13;
+  .noti-title{&amp;#13;
+    color: #343d47;&amp;#13;
+    font: 15px "SourceSansPro", "Helvetica Neue", "Helvetica", Arial, sans-serif;&amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .noti-subtitle{&amp;#13;
+    color: #81878e;&amp;#13;
+    font: 13px "SourceSansPro", "Helvetica Neue", "Helvetica", Arial, sans-serif;&amp;#13;
+    padding: 2px 0; &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  h5.noti-subtitle{&amp;#13;
+    margin-top: -10px; &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .top-30{&amp;#13;
+   top: 30px; &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+ .noti-text{&amp;#13;
+ color: #717171;  &amp;#13;
+}&amp;#13;
+  &amp;#13;
+  .hover-effect-li:not(:last-of-type){&amp;#13;
+        border-bottom: 1px solid #ddd;&amp;#13;
+      }&amp;#13;
+      .hover-effect-li:hover{&amp;#13;
+              background-color: rgba(66, 139, 202, 0.3);&amp;#13;
+       &amp;#13;
+          }&amp;#13;
+div.btn.btn-default.icon{&amp;#13;
+ border: none; &amp;#13;
+}&amp;#13;
+&amp;#13;
+  .back-navigation{&amp;#13;
+   &amp;#13;
+    padding-bottom: 10px;&amp;#13;
+    &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .back-navigation h4{&amp;#13;
+   &amp;#13;
+    font-size: 1.1em;&amp;#13;
+    &amp;#13;
+  }&amp;#13;
+  &amp;#13;
+  .cm-settings {&amp;#13;
+      margin-bottom: 10px;&amp;#13;
+      .panel-body {&amp;#13;
+        padding: 20px 20px 10px;&amp;#13;
+      }&amp;#13;
+      .cm-settings-header {&amp;#13;
+        padding-bottom: 10px;&amp;#13;
+        .cm-settings-name {&amp;#13;
+          display: inline-block;&amp;#13;
+        }&amp;#13;
+        .input-switch {&amp;#13;
+          padding-top: 6px;&amp;#13;
+          float: right;&amp;#13;
+          padding-right: 15px;&amp;#13;
+          width: 60px;          &amp;#13;
+          label {&amp;#13;
+            cursor: pointer;&amp;#13;
+            box-shadow: $cm-switch-box-shadow;&amp;#13;
+            border-radius: 3px;&amp;#13;
+          }&amp;#13;
+        }&amp;#13;
+      }&amp;#13;
+&amp;#13;
+  &lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Allows Service Portal users the ability to manage their Notification &amp;amp; Subscription Preferences.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;notification-preferences&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Notification Preferences&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {	
+	data.instanceName = gs.getProperty('instance_name');
+	data.currentUserId = gs.getUserID();
+		
+	if(!input){		
+	  data.notification_categories = [];	
+	}
+	
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:20:53&lt;/sys_created_on&gt;&lt;sys_id&gt;080ab773dbb223007ce85385ca96191b&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notification Preferences&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_080ab773dbb223007ce85385ca96191b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-12 04:34:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;div class="cm-subs-noti-pref row"&gt;
+    &lt;div class="col-xs-12 col-md-12 cm-notif-pref-header"&gt;
+      &lt;header class="cm-widget-header"&gt;
+        &lt;h3 class="main-header"&gt;${Notifications and Subscriptions}&lt;/h3&gt;
+        &lt;p class="sub-header"&gt;${Manage your subscriptions and notification preferences here.}&lt;/p&gt;
+      &lt;/header&gt;
+      &lt;div class="cm-recv-notif pull-right"&gt;
+        &lt;p aria-hidden="true" id="receiveNotifLabel"&gt;${Allow Notifications}&lt;/p&gt;      
+        &lt;div class="input-switch"&gt;
+          &lt;input aria-labelledby="receiveNotifLabel" id="switch_0{{subObj.sys_id}}" type="checkbox" checked="checked" name="switch_0{{subObj.sys_id}}" data-ng-model="c.enableNotifications"&gt;
+          &lt;label aria-hidden="true" class="switch" for="switch_0{{subObj.sys_id}}" data-ng-click="c.toggleNotifications($event)"&gt;&amp;#8203;&lt;/label&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-12 col-md-12 cm-right-pane"&gt;
+      &lt;div class="panel panel-{{::options.panel_type}} widget-toggle csm-widget"&gt;
+        &lt;div class="panel-heading cm-widget-tabs" role="tabpanel"&gt;
+          &lt;ul class="nav nav-tabs "&gt;
+            &lt;li role="tab" class="hover-effect active cm-noti-tab" data-ng-click="c.showTab('n', $event)"&gt;
+              &lt;a class="csm-link-disabled" tabindex="0"&gt;${Notifications By Category}&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li role="tab" class="hover-effect cm-chan-tab" data-ng-click="c.showTab('c', $event)"&gt;
+              &lt;a class="csm-link-disabled" tabindex="0"&gt;${Notification Channels}&lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class="panel-body cm-widget-body hidden-sm hidden-xs"&gt;
+          &lt;div class="cm-tab-content" data-ng-show="c.showCategories"&gt;
+            &lt;div class="panel panel-default csm-tile csm-widget cm-subs"&gt;
+              &lt;div class="panel-body padder-md" data-ng-show="c.subObjects.length"&gt;               
+                &lt;ul class="list-unstyled cm-subs-list"&gt;
+                  &lt;li class="row cm-subs-list-item"&gt;                    
+                    &lt;div class="col-xs-12 col-md-12 cm-sub-name"&gt;
+  										&lt;div&gt;
+  											&lt;h4 class="cm-weight-normal m-t-none pull-right" data-ng-click="c.openFormModal('sys_notif_subscription','-1','New Personal Notification')"&gt;
+    											&lt;a&gt;&lt;span aria-hidden="true" class="fa fa-plus-square-o"&gt;&lt;/span&gt; Create Personal Notification&lt;/a&gt;&lt;/h4&gt;
+ 							 				&lt;/div&gt;
+									  &lt;/div&gt;
+                  &lt;/li&gt;
+                  &lt;li class="row cm-subs-list-item hover-effect-li" data-ng-repeat="subObject in c.subObjects" 
+                      data-ng-include="'noti_category_base_template'"&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;div class="panel-body padder-md cm-no-sub" data-ng-if="!c.subObjects.length"&gt;
+                &lt;fa name="spinner" spin="true"&gt;&lt;/fa&gt;
+              &lt;/div&gt;              
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cm-tab-content" data-ng-show="c.showCategoryNotifications"&gt;
+            &lt;div class="col-xs-12 col-md-12 back-navigation"&gt;
+  										&lt;div&gt;
+  											&lt;h4 class="cm-weight-normal m-t-none pull-left" data-ng-click="c.goBack(c.lastSection)"&gt;
+    											&lt;a&gt;&lt;span aria-hidden="true" class="fa fa-angle-left"&gt;&lt;/span&gt; {{c.backText}}&lt;/a&gt;&lt;/h4&gt;
+ 							 				&lt;/div&gt;
+									  &lt;/div&gt;
+            &lt;div class="panel panel-default csm-tile csm-widget cm-settings" data-ng-show="c.showCategoryNotificationsPersonal"&gt;
+              &lt;div class="panel-body"&gt;
+                &lt;div class="cm-settings-header"&gt;
+                  &lt;h4 class="cm-settings-name"&gt;${Personal Notifications}&lt;/h4&gt;
+                 &lt;/div&gt;
+                &lt;div class="cm-settings-panel"&gt;
+                  &lt;div class="cm-settings-body" data-ng-include="'noti_notification_subs_template'"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel panel-default csm-tile csm-widget cm-settings" data-ng-show="!c.showCategoryNotificationDevices"&gt;
+              &lt;div class="panel-body"&gt;
+                &lt;div class="cm-settings-header"&gt;
+                   &lt;h4 class="cm-settings-name"&gt;${System Notifications}&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="cm-settings-panel"&gt;
+                  &lt;div class="cm-settings-body" data-ng-include="'noti_notification_base_template'"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="panel panel-default csm-tile csm-widget cm-settings" data-ng-show="c.showCategoryNotificationDevices"&gt;
+              &lt;div class="panel-body"&gt;
+                &lt;div class="cm-settings-header"&gt;
+                  &lt;h4 class="cm-settings-name"&gt;{{c.notificationName}}
+                  &lt;button class="btn btn-link" ng-click="c.openFormModal('sys_notif_subscription',c.notifSubDevices.records[0].sys_id,'Edit Notification')" aria-haspopup="dialog" role="button" ng-show="c.notifSubDevices.type == 'personal'"&gt;Edit&lt;/button&gt;
+                  &lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="cm-settings-panel"&gt;
+                  &lt;div class="cm-settings-body" data-ng-include="'noti_device_subs_template'"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cm-tab-content" data-ng-show="c.showDevices"&gt;
+            &lt;div class="panel panel-default csm-tile csm-widget cm-settings"&gt;
+              &lt;div class="panel-body"&gt;
+                &lt;div class="cm-settings-header"&gt;
+                  
+  	
+  									&lt;h4 class="cm-weight-normal m-t-none pull-right" data-ng-click="c.openFormModal('cmn_notif_device','-1','New Channel')"&gt;
+    									&lt;a&gt;&lt;span aria-hidden="true" class="fa fa-plus-square-o"&gt;&lt;/span&gt; Create Channel&lt;/a&gt;
+  									&lt;/h4&gt;
+ 		
+								
+                  &lt;h4 class="cm-settings-name"&gt;${Notification Channels}&lt;/h4&gt;
+                  
+                &lt;/div&gt;
+                &lt;div class="cm-settings-panel"&gt;
+                  &lt;div class="cm-settings-body" data-ng-include="'noti_device_base_template'"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cm-list-pagination" data-ng-if="c.hasMoreRecords &amp;&amp; !c.showNotifications"&gt; 
+            &lt;button class="btn btn-default" name="Load More" data-ng-click="c.showMore()" role="button" aria-hidden="false"&gt;${Show More}&lt;/button&gt;
+          &lt;/div&gt;          
+        &lt;/div&gt;
+        &lt;!-- 88 - 138 --&gt;
+        &lt;div class="panel-body cm-widget-body cm-mobile visible-sm visible-xs"&gt;
+          &lt;div class="cm-settings-parent" data-ng-repeat="subObj in c.subObjects"&gt;
+            &lt;div data-ng-click="c.toggleSettings($event)"&gt;
+              &lt;h4 class="cm-settings-name" data-ng-click="c.selectSubObject(subObj, $event)"&gt;
+                {{subObj.name}}
+                &lt;span class="pull-right cm-toggle-icon"&gt;&lt;i class="fa fa-plus" aria-hidden="true"&gt;&lt;/i&gt;&lt;/span&gt;
+                &lt;span class="pull-right cm-toggle-icon cm-display-none"&gt;&lt;i class="fa fa-minus" aria-hidden="true"&gt;&lt;/i&gt;&lt;/span&gt;
+              &lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="cm-settings-main cm-display-none"&gt;
+              &lt;div class="cm-tab-content" data-ng-hide="c.showNotifications"&gt;
+                &lt;div class="panel panel-default csm-tile csm-widget cm-subs"&gt;
+                  &lt;div class="panel-body padder-md" data-ng-show="subObj.subscriptions.length"&gt;
+                    &lt;ul class="list-unstyled cm-subs-list"&gt;
+                      &lt;li class="row cm-subs-list-item" data-ng-repeat="sub in subObj.subscriptions" 
+                          data-ng-include="c.getSubTemplate(sub)"&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                              
+                &lt;/div&gt;
+                &lt;div class="cm-list-pagination" data-ng-if="c.hasMoreRecords &amp;&amp; !c.showNotifications"&gt; 
+                  &lt;button class="btn btn-default" name="Load More" data-ng-click="c.showMore()" role="button" aria-hidden="false"&gt;${Show More}&lt;/button&gt;
+                &lt;/div&gt;                
+              &lt;/div&gt;
+              &lt;div class="cm-tab-content" data-ng-show="c.showNotifications"&gt;
+                &lt;div class="panel panel-default csm-tile csm-widget cm-settings"&gt;
+                  &lt;div class="panel-body"&gt;
+                    &lt;div class="cm-settings-header"&gt;
+                      &lt;h4 class="cm-settings-name cm-no-border"&gt;${ Notification Devices}&lt;/h4&gt;
+                      &lt;div class="input-switch ng-hide"&gt;
+                        &lt;input id="switch_1{{devObj.sys_id}}" type="checkbox" checked="checked" name="switch_1{{devObj.sys_id}}" data-ng-model='c.enableNotifications'&gt;
+                        &lt;label aria-hidden="true" class="switch" for="switch_1{{devObj.sys_id}}" data-ng-click="c.showSettingsPanel($event)"&gt;&amp;#8203;&lt;/label&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="cm-settings-panel"&gt;
+                      &lt;div class="cm-settings-body" data-ng-include="'noti_device_base_template'"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+         &lt;!-- 88 - 138 --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+  &lt;style&gt;
+    @media (max-width: 420px){
+      .cm-subs-noti-pref .cm-right-pane .cm-widget-tabs .nav-tabs &gt; li {
+        padding: 0px 12px !important;
+        font-size: 17px !important;
+      }
+    }
+    @media (max-width: 350px){
+      .cm-subs-noti-pref .cm-right-pane .cm-widget-tabs .nav-tabs &gt; li {
+        padding: 0px 6px !important;
+        font-size: 14px !important;
+      }
+    }
+  &lt;/style&gt;
+&lt;/div&gt;
+]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload><payload_hash>299046013</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>9f520f9f4f332300ad404a10a310c78c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3bd0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>Notification Preferences</target_name><type>Widget</type><update_domain>global</update_domain><update_guid>79ed914cfe87230006cd80b7ad943bf8</update_guid><update_guid_history>79ed914cfe87230006cd80b7ad943bf8:299046013,5d879104528723001069142a531e8294:-642417034,5a4791044d87230067b982730d54008d:1290238176,b9d5d9cce84723000e25278c9eaeecae:-1672786964,8f851180ca87230089cc1a6c6c1b2bf3:652094222,88b411800a872300ea06efed8254eeec:591306795,16a4d540008723007517e1a8bb14e9c8:-2021258081,25e610c44cc323000110406843e2acc9:995596831,5676d884e6c32300902d9e0890c3ceca:79807014,2c06d044e1c32300ef5a810e51d05602:-1602595289,f21114c8d9832300ae2d899f42887a50:-1077277610,7cf0d48069c32300be18c8848dcd0184:160602835,2e9014c85d832300d1e11332a7903c40:-1077277610,bae400883f8323002793aa7b18aa43da:-684219263,3a3dbf379ab2230069062e78ad7297ce:-1234296141,362cf7b3eab223006ff6af893026e4cb:-417773836,7d9abbb3f2322300385ad61e6bbd4300:1161614562</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_container_41b18cc4db8323007ce85385ca9619e4</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Notification Preferences - Container 1</name><order>1</order><sp_page display_value="notification_preferences">a2614cc4db8323007ce85385ca9619b6</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:51:58</sys_created_on><sys_id>41b18cc4db8323007ce85385ca9619e4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Notification Preferences - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_41b18cc4db8323007ce85385ca9619e4</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:51:58</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload><payload_hash>483338408</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>d3520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3860000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>Notification Preferences - Container 1</target_name><type>Container</type><update_domain>global</update_domain><update_guid>55b18cc46983230038728d9ee5da9ee5</update_guid><update_guid_history>55b18cc46983230038728d9ee5da9ee5:483338408,b494fed3fe3323006bc07951efc56c8e:987496988,55b18cc46983230038728d9ee5da9ee5:483338408</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_row_4fb14c04db8323007ce85385ca96194a</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Notification Preferences - Container 1">41b18cc4db8323007ce85385ca9619e4</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>david.scroggins</sys_created_by><sys_created_on>2019-01-11 21:52:06</sys_created_on><sys_id>4fb14c04db8323007ce85385ca96194a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_4fb14c04db8323007ce85385ca96194a</sys_update_name><sys_updated_by>david.scroggins</sys_updated_by><sys_updated_on>2019-01-11 21:52:06</sys_updated_on></sp_row></record_update>]]></payload><payload_hash>739200944</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>db520f9f4f332300ad404a10a310c78c</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a38d0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>1</target_name><type>Row</type><update_domain>global</update_domain><update_guid>cfb14c04ef832300010668a8c594e04b</update_guid><update_guid_history>cfb14c04ef832300010668a8c594e04b:739200944,f094fed3e8332300e9821bd07561757f:-1070019750,cfb14c04ef832300010668a8c594e04b:739200944</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_ng_template_4f2b3373dbb223007ce85385ca96194a</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_ng_template"&gt;&lt;sp_ng_template action="INSERT_OR_UPDATE"&gt;&lt;id&gt;noti_notification_subs_template&lt;/id&gt;&lt;sp_widget display_value="Notification Preferences"&gt;080ab773dbb223007ce85385ca96191b&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_ng_template&lt;/sys_class_name&gt;&lt;sys_created_by&gt;david.scroggins&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-01-11 21:23:50&lt;/sys_created_on&gt;&lt;sys_id&gt;4f2b3373dbb223007ce85385ca96194a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;noti_notification_subs_template&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_ng_template_4f2b3373dbb223007ce85385ca96194a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;david.scroggins&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-01-11 21:23:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="cm-settings-item hidden-sm hidden-xs self-clear hover-effect-li" data-ng-repeat="noti in c.subscriptions" data-ng-click="c.notiDetails(noti, $index)"&gt;
+  &lt;div&gt;
+    &lt;div id="label_{{noti.notification.sys_id}}" class="col-xs-9 col-sm-6 cm-item-name"&gt;
+      &lt;h3 class='noti-title'&gt;{{noti.name}}&lt;/h3&gt;
+      &lt;h5 class='noti-subtitle'&gt;
+      {{noti.deviceNames}}
+      &lt;/h5&gt;
+    &lt;/div&gt;
+    &lt;div class="cm-align-end col-md-3 col-md-offset-4 col-lg-1 col-lg-offset-5 top-30"&gt;
+      &lt;div class="input-switch"&gt;
+        &lt;a id="subscribe-focus{{$index}}" class="cm-subscribe-hover noti-text" aria-label="more" title="more"&gt;
+    		&lt;i class="fa fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;
+  		&lt;/a&gt;				
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_ng_template&gt;&lt;/record_update&gt;</payload><payload_hash>-37111856</payload_hash><remote_update_set display_value="Notification Preferences Widget">1b520f9f4f332300ad404a10a310c789</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-02-28 21:01:03</sys_created_on><sys_id>df520f9f4f332300ad404a10a310c78b</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16935b2a3780000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-02-28 21:01:03</sys_updated_on><table/><target_name>noti_notification_subs_template</target_name><type>Angular ng-template</type><update_domain>global</update_domain><update_guid>454bbf7366b2230072f381f3afc4ba67</update_guid><update_guid_history>454bbf7366b2230072f381f3afc4ba67:-37111856,7094fed34c3323007bd19e71deb424a3:-958289127,454bbf7366b2230072f381f3afc4ba67:-37111856</update_guid_history><update_set/><view/></sys_update_xml></unload>
