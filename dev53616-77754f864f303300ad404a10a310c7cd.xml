@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-04-15 18:01:10"><sys_remote_update_set action="INSERT_OR_UPDATE"><application display_value="Global">global</application><application_name>Global</application_name><application_scope>global</application_scope><application_version/><collisions/><commit_date/><deleted/><description>Created by Peter Cawdron, JDS Australia
+peter.cawdron@jds.net.au</description><inserted/><name>(JDS) Update Set Documentation v022</name><origin_sys_id/><parent/><release_date/><remote_base_update_set/><remote_parent_id/><remote_sys_id>77754f864f303300ad404a10a310c7cd</remote_sys_id><state>loaded</state><summary/><sys_class_name>sys_remote_update_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f4521b424f703300ad404a10a310c760</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><update_set/><update_source/><updated/></sys_remote_update_set><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_c515ccca4f50330070cf4a10a310c7f5</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">8915ccca4f50330070cf4a10a310c7f3</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:02</sys_created_on><sys_id>c515ccca4f50330070cf4a10a310c7f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_c515ccca4f50330070cf4a10a310c7f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:02</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>155693564</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>30525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3220000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>1</target_name><type>Column</type><update_domain>global</update_domain><update_guid>8515ccca2d5033004f4ec92698c5aaf6</update_guid><update_guid_history>8515ccca2d5033004f4ec92698c5aaf6:155693564</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_db_view_table_eec3bf314f50330070cf4a10a310c75a</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>200</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:17:50</sys_created_on><sys_id>eec3bf314f50330070cf4a10a310c75a</sys_id><sys_mod_count>11</sys_mod_count><sys_name>sys_update_set</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_eec3bf314f50330070cf4a10a310c75a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:41:28</sys_updated_on><table>sys_update_set</table><variable_prefix>ups</variable_prefix><view display_value="u_view_updateset_by_scope">a3933f314f50330070cf4a10a310c763</view><where_clause>sco_sys_id = ups_application</where_clause></sys_db_view_table></record_update>]]></payload><payload_hash>1644868605</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>30525b424f703300ad404a10a310c7c2</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3150000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>sys_update_set</table><target_name>sys_update_set</target_name><type>View Table</type><update_domain>global</update_domain><update_guid>7d49f335c8503300ed51e42f0848e3cd</update_guid><update_guid_history>7d49f335c8503300ed51e42f0848e3cd:1644868605,cb393ff1215033003a1c336c63b634ee:-1901471007,f209373545503300681bd10abe9ad11b:-1439052609,3809f3359250330005af110e3add03ae:693015572,fef8f33557503300d20415f2f0b38779:-2015091770,71c5f3b12c503300ae4c0f07c1f08daa:-1459684853,acc5b771e4503300588b488374f5b986:-198876726,33c47b71025033003f04b73376fc9aca:-25669669,8ac4bf31eb5033004f1301049a9f8776:-198876726,f0a473313c503300e72e5cce6d0eb402:-769846035,41043f317c5033002bac7ca72619e66a:-198876726,13d33f31b05033009c4e2ffde1f74304:-25669669</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_049823794f10330070cf4a10a310c716</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">449823794f10330070cf4a10a310c714</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:28:27</sys_created_on><sys_id>049823794f10330070cf4a10a310c716</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_049823794f10330070cf4a10a310c716</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:28:27</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>1292771828</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>34525b424f703300ad404a10a310c7be</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2fa0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>1</target_name><type>Column</type><update_domain>global</update_domain><update_guid>449823797010330073ec760466258a17</update_guid><update_guid_history>449823797010330073ec760466258a17:1292771828</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_widget_6aa227314f10330070cf4a10a310c790</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope, spUtil, $uibModal  ) {
+  /* widget controller */
+  var c = this;
+  c.data.collapseEmptyColumns = true;
+	c.data.activity='instructions';
+  c.data.whichSets = [];
+	$scope.exclusions = exclusions.toString().split(',').join(', ');
+	
+	////////////////////////////////////////////////////////
+	//On Load
+	/*
+	if(c.data.initialLoad){
+		//load a sample of the default record set as an example
+		c.server.get({action: 'documentUpdateSets', definitions:definitions, exclusions:exclusions}).then(function(response){
+			c.data.columnHeader  = response.data.columnHeader;
+			c.data.documentation = response.data.documentation;
+			c.data.activity      = response.data.activity;
+			c.data.visible = true;
+			c.data.showLoader = false;
+			console.log(c.data)
+		});
+	}*/
+	
+	////////////////////////////////////////////////////////
+	//On Change
+	$scope.$on("field.change", function(evt, parms) {
+		//ON CHANGE add to the list of update sets to be retrieved
+		c.data.visible = false;
+		c.data.activity ='selecting update sets';
+		//Ensure addtions to the list are unique
+		if(c.data.whichSets.length==0 || JSON.stringify(c.data.whichSets).indexOf(evt.targetScope.field.value)==-1){
+			c.data.whichSets.push({name: evt.targetScope.field.displayValue, sys_id:evt.targetScope.field.value});
+		}
+	}); 
+	
+	////////////////////////////////////////////////////////
+	//Custom order by (depending on the number of columns present)
+	$scope.orderByObject = function (results) {
+		
+		//order by columns from left to right but ONLY if they're present to build something like...
+		//[results.metaData.columns[0], results.metaData.columns[1], results.metaData.columns[2] ]
+		var orderArray = [];
+		
+		orderArray.push(results.metaData.columns[0]) 
+		if(results.metaData.columns.length &gt;=2){orderArray.push(results.metaData.columns[1])}
+		if(results.metaData.columns.length &gt;=3){orderArray.push(results.metaData.columns[2])}
+		
+		return orderArray;
+	}
+	
+	////////////////////////////////////////////////////////
+	//Document these Update Sets
+	c.getUpdateSets = function(){
+		c.data.documentation = {};
+		c.data.showLoader = true;
+		
+		c.server.get({action: 'documentUpdateSets', definitions:definitions, exclusions:exclusions,updateSets: c.data.whichSets, includeAllColumns:c.data.includeAllColumns, collapseEmptyColumns:c.data.collapseEmptyColumns}).then(function(response){
+			c.data.columnHeader    = response.data.columnHeader;
+			c.data.documentation   = response.data.documentation;
+			c.data.excludedSummary = response.data.excludedSummary;
+			c.data.activity        = response.data.activity;
+			c.data.whichSets       = response.data.updateSets;
+			c.data.visible         = true;
+			c.data.showLoader      = false;
+			console.log(c.data)
+		});
+	};
+	
+	////////////////////////////////////////////////////////
+	//Show options in a modal template
+	c.openModal = function() {
+		c.modalInstance = $uibModal.open({
+			templateUrl: 'modalTemplate',
+			scope: $scope
+		});
+	}
+	
+	////////////////////////////////////////////////////////
+	//Close the modal and get create the clone if asked
+	c.closeModal = function(action) {
+		c.modalInstance.close();
+		c.actioned = true;
+		if(action=='cancel'){return;}
+		
+		c.server.get({updateSets: c.data.whichSets, action: 'mergeUpdateSets', newName: c.data.rComment}).then(function(response){});
+	}
+	
+	//////////////////////////////////////////////////
+	// Export to Word	
+	$scope.export2Word = function (  ) {
+
+		var css = "&lt;style&gt;"+
+				"h2      {font-size: 1.4em;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"h3      {font-size: 1.2em;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"p       {font-size: 0.8em;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"p.title {font-size: 1.0em;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"li      {font-size: 0.8em;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"table.CSSTable   {font-size: 0.8em;border-width:1px;border-spacing:0;border-style:solid;border-color:silver;border-collapse:collapse;background-color:white;font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}"+
+				"table.CSSTable th{border-width:1px;padding:0;border-style:solid;border-color:silver;background-color:#eff4ff;width:15%;-moz-border-radius:}"+
+				"table.CSSTable td{border-width:1px;padding:0;border-style:solid;border-color:silver;background-color:white;width:15%;text-align:left;-moz-border-radius:}"+
+				"th.sideLeft{text-align:left; font-weight:normal}"+
+				"th.sideRight{font-weight:normal}"+
+				"&lt;/style&gt;"
+
+		var header = "&lt;html xmlns:o='urn:schemas-microsoft-com:office:office' "+
+				"xmlns:w='urn:schemas-microsoft-com:office:word' "+
+				"xmlns='http://www.w3.org/TR/REC-html40'&gt;"+
+				"&lt;head&gt;&lt;meta charset='utf-8'&gt;&lt;title&gt;Update Set Documentation&lt;/title&gt;"+css+"&lt;/head&gt;&lt;body&gt;";
+
+		var creationDate = moment().local().format('dddd, MMMM Do YYYY, h:mm a');
+		
+		//list the data sets
+		var body ='&lt;h2&gt;Update Set Documentation&lt;/h2&gt;';
+		body+='&lt;p&gt;An &lt;a href="https://docs.servicenow.com/bundle/madrid-application-development/page/build/system-update-sets/concept/system-update-sets.html"&gt;update set&lt;/a&gt; is a collection of configuration changes that can be moved from one instance to another. This allows administrators to group a series of changes into a named set and move them as a unit to other systems for testing or production deployment.&lt;/p&gt;'
+		body+='&lt;p&gt;This report was created on '+creationDate+' and spans the following update set(s): &lt;/p&gt;'
+		body+='&lt;ul&gt;'
+		for(var eachSet in c.data.whichSets){body+='&lt;li&gt;'+c.data.whichSets[eachSet].name+'&lt;/li&gt;'}
+		body+='&lt;/ul&gt;'
+
+		//Rather than trying to export HTML and getting strange results with flexbox divs, we'll simply build a table from the angular scope data object
+		for(var thisType in c.data.documentation){
+
+			body+= '&lt;h3&gt;'+c.data.documentation[thisType].name+'&lt;/h3&gt;'
+			body+= '&lt;p style="font-weight:normal;font-size: 0.8em;"&gt;'+c.data.documentation[thisType].metaData.updateDescription+'&lt;/p&gt;'
+			body+= '&lt;table class="CSSTable" width=100%&gt;&lt;tr&gt;'
+
+			//////////////////////
+			//column headers
+			var colOrder = [];
+			
+			for(var thisDetail in c.data.documentation[thisType].metaData.columnHeader){
+				body+= '&lt;th&gt;'+ c.data.documentation[thisType].metaData.columnHeader[thisDetail] +'&lt;/th&gt;';
+				colOrder.push(c.data.documentation[thisType].metaData.columns[thisDetail]);
+			}
+			body+= '&lt;/tr&gt;'
+
+			//////////////////////
+			//table details
+			for(var thisRow in c.data.documentation[thisType].metaData.records){
+				body+= '&lt;tr&gt;'
+				
+				var values = {}; //objects are notorious for not being sortable by property so we'll use the array to control how they are applied and ensure they match the column headers
+				
+				for(var thisCell in c.data.documentation[thisType].metaData.records[thisRow]){
+					if(thisCell != '$$hashKey')
+						values[thisCell] = c.data.documentation[thisType].metaData.records[thisRow][thisCell] || ' ';
+				}
+				 
+				colOrder.forEach(function(column){
+					body+= '&lt;td&gt;'+values[column]+'&lt;/td&gt;';
+				});
+				
+				body+= '&lt;/tr&gt;'
+			}	
+
+			body+= '&lt;/table&gt;&lt;p&gt;&lt;/p&gt;'
+
+		}
+		
+		if(c.data.excludedSummary.length!=0){
+			//Also, list any updates that have been excluded (in summary form)
+			body+= '&lt;h3&gt;Miscellaneous updates&lt;/h3&gt;'
+			body+= '&lt;p style="font-weight:normal;font-size: 0.8em;"&gt;Note: the following additional minor updates are also included and have been summarised below&lt;/p&gt;'
+			body+= '&lt;table class="CSSTable" width=100%&gt;'
+			body+= '&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Table&lt;/th&gt;&lt;th style="text-align:right;"&gt;Number of Updates&lt;/th&gt;&lt;/tr&gt;'
+
+			//////////////////////
+			//table details
+			for(var thisExclusion in c.data.excludedSummary){
+				body+= '&lt;tr&gt;'
+				body+= '&lt;td style="text-align:left;"&gt;'+c.data.excludedSummary[thisExclusion].name+'&lt;/td&gt;'
+				body+= '&lt;td style="text-align:left;"&gt;'+c.data.excludedSummary[thisExclusion].table+'&lt;/td&gt;'
+				body+= '&lt;td style="text-align:right;"&gt;'+c.data.excludedSummary[thisExclusion].count+'&lt;/td&gt;'
+				body+= '&lt;/tr&gt;'
+			}	
+
+			body+= '&lt;/table&gt;&lt;p&gt;&lt;/p&gt;'
+		}
+		var sourceHTML = header + body + "&lt;/body&gt;&lt;/html&gt;";
+
+		var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+		var fileDownload = document.createElement("a");
+		document.body.appendChild(fileDownload);
+		fileDownload.href = source;
+		fileDownload.download = 'Update Set Documentation.doc';
+		fileDownload.click();
+		document.body.removeChild(fileDownload);
+	}
+
+	c.deleteItem = function (index) {
+		
+		if(c.data.whichSets.length!=0){
+			c.data.whichSets.splice(index, 1);
+		}
+		
+		if(c.data.whichSets.length==0){
+			c.data.activity='instructions';
+		}
+	}
+	//
+	//////////////////////////////////////////////////
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.question {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.spacer {
+  display:inline-block;
+  width:5%;
+}
+
+.btn-question {
+	width: 45%;
+}
+
+/* Tables
+================================== */
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+  padding: 0;
+  color:#717171;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;  // Default to full width
+  padding: 0.3em 0.8em;
+  overflow: hidden; // Or flex might break
+  list-style: none;
+  border: 1px solid silver;
+  background: fade(slategrey,20%);
+  
+  font-size:14px;
+  &amp;gt; h1, &amp;gt; h2, &amp;gt; h3, &amp;gt; h4, &amp;gt; h5, &amp;gt; h6 { margin: 0; }
+}
+
+.tableCell {
+ 	/*width:100px;*/
+ 	border: 1px solid silver;
+  padding:5px;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+.tableHeader {
+ 	/*width:100px;*/
+ 	border: 1px solid silver;
+  padding:5px;
+  background-color:aliceblue;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+.tableHeader:first-child {
+    width: 200px;
+}
+
+.Rtable-cell-detail {
+  font-weight:bold;
+}
+
+
+.unread{
+ background-color:#006600;
+ color:white;
+}
+
+.rowSelected{
+  background-color:#002966;
+  color:white;
+}
+
+/* Table column sizing
+================================== */
+.Rtable--2cols &amp;gt; .Rtable-cell  { width: 50%; }
+.Rtable--3cols &amp;gt; .Rtable-cell  { width: 33.33%; }
+.Rtable--4cols &amp;gt; .Rtable-cell  { width: 25%; }
+.Rtable--5cols &amp;gt; .Rtable-cell  { width: 20%; }
+.Rtable--6cols &amp;gt; .Rtable-cell  { width: 16.6%; }
+
+.loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 75px;
+  height: 75px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.center {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;update_set_documentation&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;+update set documentation&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;(function() {
+
+	data.initialLoad = true;
+	data.showLoader = false;
+	data.visible = false;
+	data.excludedSummary = [];
+	
+	var whichUpdateSets = [];
+	 
+	//Check to see if the updates sets contain any children
+	if(input){
+		
+		data.updateSets=[];
+		
+		//Get a list of sys_id's for the update sets
+		for(var thisSet=0; thisSet &amp;lt; input.updateSets.length; thisSet++){
+			whichUpdateSets.push(input.updateSets[thisSet].sys_id);
+			data.updateSets.push({name: input.updateSets[thisSet].name, sys_id:input.updateSets[thisSet].sys_id});
+		}
+
+		//check to see if there are any child update sets related to these update sets
+		var uSet = new GlideRecord('sys_update_set');
+		uSet.addEncodedQuery('sys_idIN'+ whichUpdateSets.toString());
+		uSet.query();
+
+		while(uSet.next()){
+			findChildren(uSet.sys_id)
+		}
+	}
+	
+	function findChildren(whichUpdateSet){
+			//Does this record have children?
+			var uSetChildren = new GlideRecord('sys_update_set');
+			uSetChildren.addEncodedQuery('sys_id!='+ whichUpdateSet + '^parent.sys_id=' + whichUpdateSet);//avoid recursive loops
+			uSetChildren.query();
+
+			while(uSetChildren.next()){
+				var thisChild = uSetChildren.sys_id.toString();
+				whichUpdateSets.push(thisChild);
+				data.updateSets.push({name: uSetChildren.name.toString(), sys_id:thisChild})
+				findChildren(thisChild);//loop until all the kids, grandkids, etc are found
+			}
+		}
+	
+	//////////////////////////////////////////////////////
+	//
+	// Clone and Merge Update Sets
+	//
+	//////////////////////////////////////////////////////	
+
+	if(input.action == 'mergeUpdateSets'){
+
+		data.initialLoad = false;
+
+		//create a new update set
+		var newUpdateSet = new GlideRecord('sys_update_set');
+		newUpdateSet.initialize();
+		newUpdateSet.name = input.newName;
+		newUpdateSet.state = 'complete';
+		var mergedUpdateSet = newUpdateSet.insert();
+
+		//use updateNames to capture each record in order
+		var updateNames = {};
+
+		//Get all the updates, but ensure they're unique by sorting by last updated
+		var allUpdates = new GlideRecord('sys_update_xml');
+		allUpdates.addEncodedQuery('update_set.sys_idIN'+whichUpdateSets.toString());
+		allUpdates.orderByDesc('sys_updated_on')
+		allUpdates.query();
+
+		var newUpdates = new GlideRecord('sys_update_xml');
+
+		while(allUpdates.next()){
+
+			var uniqueUpdateName = allUpdates.name.toString();
+
+			if(!updateNames.hasOwnProperty(uniqueUpdateName)){
+
+				newUpdates.initialize();
+				newUpdates.autoSysFields(false);
+				newUpdates.action              = allUpdates.action;
+				newUpdates.application         = allUpdates.application;
+				newUpdates.category            = allUpdates.category;
+				newUpdates.comments            = allUpdates.comments;
+				newUpdates.name                = allUpdates.name;
+				newUpdates.payload             = allUpdates.payload;
+				newUpdates.payload_hash        = allUpdates.payload_hash;
+				newUpdates.sys_recorded_at     = allUpdates.sys_recorded_at;
+				newUpdates.remote_update_set   = allUpdates.remote_update_set;
+				newUpdates.replace_on_upgrade  = allUpdates.replace_on_upgrade;
+				newUpdates.table               = allUpdates.table;
+				newUpdates.target_name         = allUpdates.target_name;
+				newUpdates.type                = allUpdates.type;
+				newUpdates.update_domain       = allUpdates.update_domain;
+				newUpdates.update_guid_history = allUpdates.update_guid_history;
+				newUpdates.update_set          = mergedUpdateSet;
+				newUpdates.sys_created_on      = allUpdates.sys_created_on;
+				newUpdates.sys_created_by      = allUpdates.sys_created_by;
+				newUpdates.sys_updated_on      = allUpdates.sys_updated_on;
+				newUpdates.sys_updated_by      = allUpdates.sys_updated_by;
+				newUpdates.sys_mod_count       = allUpdates.sys_mod_count;
+				newUpdates.view                = allUpdates.view;
+
+				var newRecord = newUpdates.insert();
+
+				//by capturing each update as it occurs in descending order, we can avoid more than one update per unique name
+				updateNames[uniqueUpdateName] = allUpdates.sys_updated_on;
+			}
+		}
+		gs.addInfoMessage( input.newName+ ' created as an update set');
+		return;
+	}
+
+	//////////////////////////////////////////////////////
+	//
+	// Document Update Sets
+	//
+	//////////////////////////////////////////////////////
+
+	if(input.action == 'documentUpdateSets'){
+
+		data.initialLoad = false;
+		
+		//by default, show the global default update set if there's no input (as this is used as an example)
+		if(whichUpdateSets.length==0){
+
+			var globalUpdateSet = new GlideRecord('sys_update_set');
+			globalUpdateSet.addEncodedQuery('application=global^name=Default');
+			globalUpdateSet.query();
+			if(globalUpdateSet.next()){whichUpdateSets.push (globalUpdateSet.sys_id.toString());}
+			data.activity='instructions';
+			data.visible = true;
+
+		}else{
+
+			data.activity ='actual data';
+			data.visible = true;
+
+		}
+
+		var changeLog = {}, excludedSummary = {};
+		
+		var updates = new GlideRecord('sys_update_xml');
+		updates.addEncodedQuery('update_setIN'+whichUpdateSets.toString());
+		updates.orderBy('target_name');
+		if(data.activity=='instructions'){updates.setLimit(10);}//show an example with just a few entries
+		updates.query();
+
+		var uniqueObject = {};//ensure all update set information is grouped
+
+		while(updates.next()){
+			var updateName = updates.type.toString();
+
+			//Get the metadata for this update
+			var thisMetadata = input.definitions.filter(function(whichMeta) {return whichMeta.name === updateName;})[0];
+
+			//If no metadata was found, use a generic default
+			if( thisMetadata===undefined){thisMetadata = {name: updateName, description : updateName + ' contains configuration information for ServiceNow', table:'', fields:['name','description','label','element','short_description']};}
+
+			//use regex to split the full name into table &amp;amp; sys_id 
+			var fullName = updates.name.toString();
+			var regX = /([^_]+)$/gm 
+
+			var sys_id = fullName.match(regX).toString() || '';
+			var tableName = fullName.substr(0,(fullName.length - sys_id.length)-1) || '';
+
+			//////////////////////////////////////////////////////////////////////
+			//The excluded list is summarised, everything else is gathered in full
+			if (searchArray(input.exclusions, updateName) ) {
+				
+				if(!excludedSummary.hasOwnProperty(updateName)){
+					
+					excludedSummary[updateName] = {table:tableName, count: 1};
+				}else{
+					excludedSummary[updateName].count++;
+				}
+				
+			}else{
+
+				if(!changeLog.hasOwnProperty(updateName)) {
+					changeLog[updateName] = {};
+					changeLog[updateName].updateDescription =  thisMetadata.description;
+					changeLog[updateName].records=[];
+					changeLog[updateName].hyperlinks=[];
+					changeLog[updateName].columns=[];
+					changeLog[updateName].columnHeader=[];
+					changeLog[updateName].recordCount={};
+
+					var getTheseFields =  thisMetadata.fields.toString().split(',');
+					for(var eachField=0;eachField &amp;lt; getTheseFields.length;eachField++){
+
+						var columnTitle = toTitleCase(getTheseFields[eachField].split('_').join(' '));
+						changeLog[updateName].columns.push(getTheseFields[eachField].toLowerCase());
+						changeLog[updateName].columnHeader.push(columnTitle);
+						changeLog[updateName].recordCount[getTheseFields[eachField].toLowerCase()]=0;//used to see if there are values in a column (show/hide)
+					}
+				}
+
+				//ignore delete
+				var action = updates.action.toString()=='DELETE' ? 'Delete' :'Insert/Update';
+
+				//Used to ensure there's only ever one entry per update (in case multiple update sets changed the same record)
+				var uniqueName = updates.name.toString(); 
+
+				//If it's not an entry for deletion and it's unique (hasn't occured before) then add it to our data set
+				if(action != 'Delete' &amp;amp;&amp;amp; !uniqueObject.hasOwnProperty(uniqueName) ){
+					var record={};
+
+					//Set up the individual update
+					//var hyperName = updates.name.toString();
+					//var hyperSysID = hyperName.substr(hyperName.length -32,32); //extractXMLValue('sys_id', updates.payload) 
+					//var hyperTable  = hyperName.substr(0,hyperName.length -33);
+					//if there's no underscores and the sys_id is 32 characters in length, consider it genuine
+					//var validRecord = hyperSysID.indexOf('_')==-1 &amp;amp;&amp;amp; hyperSysID.length==32;
+
+					var activeRecord = false;
+					var thisRecord;
+
+					//updates extracting all the values from the XML payload are slow, so if this is a table, grab the actual record 
+					if(tableName !='' &amp;amp;&amp;amp; sys_id !=''){
+						//is this a valid table?
+						var thisTable = new GlideRecord('sys_db_object');
+						if(thisTable.get('name',tableName)){
+							//is this a valid record?
+							thisRecord = new GlideRecord(tableName);
+							if(thisRecord.get(sys_id)){
+								activeRecord = true;
+							}
+						}
+					}
+
+					for(var thisField=0; thisField &amp;lt; changeLog[updateName].columns.length; thisField++){
+
+						var thisColumnTitle = changeLog[updateName].columnHeader[thisField];
+						var whichField      = changeLog[updateName].columns[thisField].toLowerCase();
+						var thisValue       = '';
+
+						//Switch depending on whether this is an accessible record or has to come from the XML payload
+						if(activeRecord){
+
+							if(thisRecord.hasOwnProperty(whichField)){
+								//Does this field exist on this table?
+								thisValue = thisRecord[whichField].getDisplayValue() || '';
+
+							}else if(whichField=='name'){
+								//If there's no name field, populate that with the target_name to avoid blanks
+								thisValue = updates.target_name.toString() || '';
+							} 
+
+						}else{
+							//If we couldn't find the table, try to get the value from the XML itself
+							thisValue = extractXMLValue(whichField, updates.payload);
+						}
+						
+						//values such as this,that,another need to be split up with spaces and commas to word wrap properly, so look for them
+						var findArrayRegEx = /([a-z],[a-z])/gm
+
+						if(thisValue.match(findArrayRegEx)){
+							thisValue = thisValue.split(',').join(', ')
+						}
+
+						//If there's a valid value, increase the counter for this column. Columns == 0 will be hidden
+						if(thisValue!=''){changeLog[updateName].recordCount[whichField]++;}
+
+						record[changeLog[updateName].columns[thisField]] = thisValue;
+					}	
+
+					//build the hyperlink for this record
+					//updates.name = 'sys_script_30e4145c4f46df00acff4c111310c709' so we can grab the table and sys_id from here
+
+					//ignore dictionary entries as there's no sys_id in the update name, simply open the list for the user
+					if(updates.type.toString()=='Dictionary'){
+						changeLog[updateName].hyperlinks.push('/nav_to.do?uri=%2Fsys_dictionary_list.do');
+					}else{
+						changeLog[updateName].hyperlinks.push('/nav_to.do?uri='+ tableName +'.do%3Fsys_id%3D'+ sys_id);
+					}
+
+					changeLog[updateName].records.push(record);
+
+					uniqueObject[uniqueName]=true;
+				}
+			}
+		}
+ 
+		removeEmptyColumns(changeLog);
+ 
+		//build an array so it's easy to sort using angular than an object
+		data.documentation = [];
+		for (var change in changeLog){
+			data.documentation.push({name: change, metaData:changeLog[change]})
+		}
+		
+		//Sort the array 
+		data.documentation.sort(function(a,b){if (a.name &amp;lt; b.name)return -1;if (a.name &amp;gt; b.name)return 1;return 0;});
+		 
+		//build an array for the excludedSummary
+		for(var exclude in excludedSummary){
+			
+			var excludeTable = excludedSummary[exclude].table;
+			excludeTable = excludeTable.length &amp;gt; 45 ? excludeTable.substr(0,45) + '...' : excludeTable ;
+			
+			data.excludedSummary.push({name: exclude, table: excludeTable, count:excludedSummary[exclude].count})
+		}
+		
+		//Sort the array 
+		data.excludedSummary(function(a,b){if (a.name &amp;lt; b.name)return -1;if (a.name &amp;gt; b.name)return 1;return 0;});
+ }
+
+})();
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Additional supporting functions
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function removeEmptyColumns(changeLog){
+
+	for(var category in changeLog){
+
+		for(var column in changeLog[category].recordCount) {
+
+			//if any of these columns don't contain any values delete them from the columns and records
+			if(changeLog[category].recordCount[column]==0){
+
+				//Remove those records
+				changeLog[category].records.forEach(function(v){delete v[column]});
+
+				//Remove those column headers
+				changeLog[category].columns.forEach(function(v){ 
+					if(v==column){
+						changeLog[category].columns.splice(changeLog[category].columns.indexOf(v), 1)
+						changeLog[category].columnHeader.splice(changeLog[category].columnHeader.indexOf(toTitleCase(v.split('_').join(' '))),1);
+					}
+				});		
+
+			}
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function extractXMLValue(what, from){
+
+	var leadingRegEx  = new RegExp('(&amp;lt;'+what+' display_value=")([^"]+)'); //First look for... &amp;lt;sp_widget display_value="THIS"&amp;gt;07f23f854ff88f00f6dc461f0310c7e7&amp;lt;/
+	var trailingRegEx = new RegExp('(&amp;gt;)([^&amp;lt;]+)(&amp;lt;\/'+what+'&amp;gt;)') ; //Second look for... &amp;gt;THIS&amp;lt;/sys_class_name&amp;gt;
+	var eachValue = leadingRegEx.exec(from) || trailingRegEx.exec(from) || '';
+
+	var thisValue = eachValue !='' ? eachValue[2].replace(/,/g,' ') : '';
+	thisValue = thisValue.replace(/(\r\n|\n|\r)/gm,"");//get rid of any line breaks
+
+	//Sometimes fields like description are hidden inside CDATA[] tags so if these appear we'll ignore them, as things like the short description will be picked up below
+	if(thisValue==']]&amp;gt;'){thisValue = '';}
+
+	thisValue = thisValue.replace("&amp;lt;[^&amp;gt;]*&amp;gt;", "");// remove any HTML tags
+
+	//Check for an actual value being returned for name or description and keep trying alternatives if there's nothing there
+	if(thisValue =='' &amp;amp; what=='name'){thisValue = extractXMLValue('u_name', from);}
+	if(thisValue =='' &amp;amp; what=='u_name'){thisValue = extractXMLValue('sys_name', from);}
+	if(thisValue =='' &amp;amp; what=='sys_name'){thisValue = extractXMLValue('text', from);}
+	if(thisValue =='' &amp;amp; what=='text'){thisValue = extractXMLValue('value', from);}
+	if(thisValue =='' &amp;amp; what=='value'){thisValue = extractXMLValue('sys_name', from);}
+	if(thisValue =='' &amp;amp; what=='sys_name'){thisValue = extractXMLValue('sys_class_name', from);}
+
+	if(thisValue =='' &amp;amp; what=='description'){thisValue = extractXMLValue('u_description', from);}
+	if(thisValue =='' &amp;amp; what=='u_description'){thisValue = extractXMLValue('short_description', from);}
+	if(thisValue =='' &amp;amp; what=='short_description'){thisValue = extractXMLValue('u_short_description', from);}
+
+	return thisValue;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function toTitleCase(str)
+{
+	return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//If there's a need to look at the parent record or parent table that could be potentially added using this... 
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+var whichUpdate = 'sys_ui_action_ef1e5822db430300407f78eebf96196a'
+
+var whichSysID = whichUpdate.substr(whichUpdate.length - 32, 32);
+var whichTable = whichUpdate.substr(0,whichUpdate.length - 33);
+
+gs.info(whichUpdate.length + ' ' + whichSysID  + ' ' + whichTable ) 
+var parentName = '';
+var getParent = new GlideRecord(whichTable)
+if(getParent.get(whichSysID)){
+	gs.info(getParent.getDisplayValue('parent') || getParent.getDisplayValue('table') )
+}
+
+*/
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// somewhat astonishingly the rhino engine stopped supporting array.find() ?????
+function searchArray(whichArray, searchFor){
+	var result = false;
+	for (var item in whichArray) {
+		if(whichArray[item]==searchFor){result = true;}
+	}
+	return result;
+}&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-21 04:02:41&lt;/sys_created_on&gt;&lt;sys_id&gt;6aa227314f10330070cf4a10a310c790&lt;/sys_id&gt;&lt;sys_mod_count&gt;158&lt;/sys_mod_count&gt;&lt;sys_name&gt;+update set documentation&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_6aa227314f10330070cf4a10a310c790&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-10 22:49:04&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-primary b" style="margin-top:20px;width:100%"&gt;
+  &lt;div class="panel-heading"&gt;Update Set Documentation&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+
+    &lt;div  id="updateSetDiv" style="width:100%"&gt;&lt;sn-record-picker id="updateSet" placeholder="Select an update set" field="name" table="'u_view_updateset_by_scope'" display-field="'ups_name'" display-fields="'sco_scope,ups_state'" value-field="'ups_sys_id'" search-fields="'ups_name'" page-size="20" default-query=""&gt;&lt;/sn-record-picker&gt;&lt;/div&gt;
+
+    &lt;span ng-show="c.data.activity=='selecting update sets'"&gt; 
+      &lt;p style="padding-top:0.5em;"&gt;List of update sets to document&lt;/p&gt;
+      &lt;div style="padding-bottom:0.5em;position: relative;width:100%" ng-repeat="selected in c.data.whichSets" &gt;&lt;input style="width:75%;background: #dddddd;" disabled class="form-control ng-pristine ng-valid ng-scope ng-empty ng-valid-maxlength ng-touched" value="{{selected.name}}"&gt;
+        &lt;div style="position: absolute;top: 6px;left: 72%;font-weight: bold;" ng-click="c.deleteItem($index)"&gt;x&lt;/div&gt;&lt;/div&gt;
+      &lt;p&gt;Batched update sets will automatically detect children, grandchildren, etc.&lt;/p&gt;
+      &lt;p&gt;You can continue adding more update sets (above) or...&lt;/p&gt;
+
+      &lt;div style="width:100%"&gt;
+        &lt;div style="float: left;width50%;"&gt;
+          &lt;button name="mergeUpdateSets" class="btn btn-default btn-block" style="border-width:1px;" ng-click="c.openModal();"&gt;Clone and merge&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div style="float: right;width50%;"&gt;
+          &lt;button type="button" class="btn btn-annotate btn-primary btn-group ng-scope" style="" ng-click="c.getUpdateSets()"&gt;Document Update Sets&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div ng-show="data.showLoader"  style="padding-top:2em;position:relative;left:40%;"&gt;
+        &lt;div class="loader" ng-show="data.header.length!=0"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/span&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div ng-show="c.data.activity=='instructions'" class="panel primary b" style="margin-top:20px;width:100%"&gt;
+    &lt;div class="panel-heading minor"&gt;Instructions&lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+      &lt;p&gt;Wherever possible, add a &lt;b&gt;short description&lt;/b&gt; or &lt;b&gt;description&lt;/b&gt; to the work you're doing so you can use this to streamline your documentation on-the-fly.&lt;/p&gt;
+      &lt;p&gt;You can update the descriptions, fields visible and the excluded/summarised list in the &lt;a href="/sys_ui_script.do?sys_id=ac33eb754f10330070cf4a10a310c713&amp;sysparm_record_target=sys_ui_script" target="_blank"&gt;definitions configuration file&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Also, you can select multiple update sets and combine them into a single document&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="panel panel-primary b" style="margin-top:20px;width:100%" ng-show="c.data.visible"&gt;
+    &lt;div style="float:right;margin-top:5px;margin-right:5px;"&gt;
+      &lt;button ng-show="c.data.visible" class="btn btn-blockng-binding btn-default ng-scope" ng-click="export2Word()" style="margin-bottom:10px;"&gt;Export to Microsoft Word&lt;/button&gt;    
+    &lt;/div&gt;
+    &lt;div class="panel-heading" style="padding-bottom:15px;"&gt;Update Set Documentation&lt;/div&gt;
+    &lt;div class="panel-body"&gt;
+      &lt;div ng-show="c.data.activity!='instructions'"&gt;
+        &lt;p&gt;
+          Update set documentation for:
+        &lt;/p&gt;
+        &lt;div style='padding-left:15px;padding-bottom:10px;'&gt;
+          &lt;ui &gt;
+            &lt;li ng-repeat="set in c.data.whichSets"&gt;{{set.name}}&lt;/li&gt;
+          &lt;/ui&gt;
+        &lt;/div&gt; 
+        &lt;p&gt;You can update the descriptions, fields visible and the excluded/summarised list in the &lt;a href="/sys_ui_script.do?sys_id=ac33eb754f10330070cf4a10a310c713&amp;sysparm_record_target=sys_ui_script" target="_blank"&gt;definitions configuration file&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div ng-show="c.data.documentation.metaData.records.length!=0" ng-repeat="results in c.data.documentation" &gt;
+        &lt;h4&gt;{{results.name}}&lt;/h4&gt;
+        &lt;h5&gt;{{results.metaData.updateDescription}}&lt;/h5&gt; 
+
+        &lt;table style='width:100%'&gt;
+          &lt;tr&gt;
+            &lt;td class="tableHeader" ng-repeat="header in results.metaData.columnHeader"&gt;{{header}}&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr ng-repeat="row in results.metaData.records | orderBy: orderByObject(results)" ng-init="childIndex = $index"&gt;
+            &lt;td ng-if="$index==0"class="tableCell" ng-repeat="info in results.metaData.columns"&gt;&lt;a href="{{results.metaData.hyperlinks[childIndex]}}" target="_blank"&gt;{{row[info]}}&lt;/a&gt;&lt;/td&gt;
+            &lt;td ng-if="$index!=0"class="tableCell" ng-repeat="info in results.metaData.columns"&gt;{{row[info]}}&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt; 
+      &lt;/div&gt;
+      &lt;p&gt;&lt;/p&gt;
+      &lt;div ng-if="c.data.excludedSummary.length!=0"&gt;
+        &lt;h4&gt;Miscellaneous updates&lt;/h4&gt;
+        &lt;p&gt;Note: the following additional minor updates are also included and have been summarised below&lt;/p&gt;
+        &lt;table style='width:100%'&gt;
+          &lt;tr&gt;
+            &lt;td class="tableHeader"&gt;Name&lt;/td&gt;&lt;td class="tableHeader"&gt;Table&lt;/td&gt;&lt;td class="tableHeader" style="text-align:right;"&gt;Number of Updates&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr ng-repeat="exclusions in c.data.excludedSummary"&gt;
+            &lt;td class="tableCell" style="width:40%"&gt;{{exclusions.name}}&lt;/td&gt;
+            &lt;td class="tableCell" style="width:40%"&gt;{{exclusions.table}}&lt;/td&gt;
+            &lt;td class="tableCell" style="width:20%;text-align:right;"&gt;{{exclusions.count}}&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div style="padding:10px;"&gt;
+      &lt;button name="mergeUpdateSets" class="btn btn-default btn-block" style="border-width:1px;width:50%" ng-click="c.openModal();"&gt;Clone and Merge Update Sets&lt;/button&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+
+  
+&lt;/div&gt;
+
+&lt;script type="text/ng-template" id="modalTemplate"&gt;
+	&lt;div class="panel panel-default"&gt;
+		&lt;div class="panel-heading"&gt;
+			&lt;h4 class="panel-title"&gt;Combine update sets&lt;/h4&gt;
+  &lt;/div&gt;
+		&lt;div class="panel-body wrapper-xl"&gt;
+    &lt;span&gt;&lt;p&gt;This will combine the following update sets, taking ONLY the last update for each update XML payload&lt;/p&gt;&lt;/span&gt;
+    	&lt;div style='padding-left:15px;padding-bottom:10px;'&gt;
+          &lt;ui&gt;
+            &lt;li ng-repeat="set in c.data.whichSets"&gt;{{set.name}}&lt;/li&gt;
+  &lt;/ui&gt;
+  &lt;/div&gt; 
+			&lt;input ng-model="c.data.rComment" id="rComment" class="form-control input-typeahead" type="text" style="width:100%" placeholder="Provide a unique name for this update set" ng-keypress="c.rComment!='' ? c.validModal=true : c.validModal=false" /&gt;
+  &lt;/div&gt;
+		&lt;div class="panel-footer text-right"&gt;
+    	&lt;button class="btn btn-default" ng-click="c.closeModal('cancel')" &gt;Cancel&lt;/button&gt;
+			&lt;button class="btn btn-success" ng-click="c.closeModal('create')" ng-disabled="!c.validModal"&gt;Merge Update Sets&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/script&gt;  
+
+&lt;!-- Alternative approach to tables using flex div tables
+
+&lt;div ng-repeat="line in data.documentation"  ng-if="$index==0" class="Rtable Rtable--5cols"&gt; 
+&lt;div class="Rtable-cell" ng-repeat="(key, value) in line"&gt;{{key}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;div ng-repeat="line in data.documentation" class="Rtable Rtable--5cols"&gt; 
+&lt;div class="Rtable-cell" ng-repeat="(key, value) in line" &gt;{{value}}&lt;/div&gt;
+&lt;/div&gt;  
+
+--&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload><payload_hash>-1730615680</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>34525b424f703300ad404a10a310c7c1</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3780000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>+update set documentation</target_name><type>Widget</type><update_domain>global</update_domain><update_guid>9144e2e02030330038935d337e56a446</update_guid><update_guid_history>9144e2e02030330038935d337e56a446:-1730615680,e427adbd51ec3300af30e7acfcdf962f:-1781290529,47f2adbdbcec33007e68fb1c5376370d:457889846,b9d265b188ac33006bf46d19e2805c0f:581666726,45ebace4806033005332cf8e5cfed04d:-122369588,168b2868cb6033004a8ac21f57b8b5bb:1503637290,dc4b28688560330011261635bb8adab3:-419445981,7c0b2428a76033007b941f0ced20c3b4:-641611785,9d6aece43d603300b7da26e7e0b74c72:-32665430,160ae828b160330057d527217d62ca22:1899112633,76e9a4e487603300348967ed7dec6f22:2092741861,7d99ece46b603300c62e0efd42850753:-582708023,c17968646c603300bb6cf99303cdd792:-1719175219,1e3968a4796033001daba5b0df19e428:911526434,27296028866033004ecfe647df327f20:-415420117,4309a4e45760330021a036143d4fe56b:69719243,a1f8eca4d5603300ec592720028f9276:1942008546,2938eca4fc60330015215f57288b0c69:-1776959277,60072c24b0603300b12125ce6850951c:-11317138,d1e664a46c60330067d59af87897a370:2110726520,23d56864bc6033009fc229dfc8a6e173:-238584628,4395a4648b60330005b2d91f2f30a879:570690066,87652464f860330049c266114f4e3089:-1364692417,0df4a8248f6033003f9b48a3b0969b49:-386761130,0ea42c241f603300a6693df50243e114:-310331726,a792e0e0fe60330055c244254f2b6eff:1201904244,0572e0e0af6033000635f3d640d92bef:-372417980,f3d1ace4c420330038ab8022d24a7db2:695873269,ceb450a826203300fdd92e99dab678bc:-1222499133,be87fc92ced0330012da869c2c095eb6:-592425291,ae57bcdeb99033005b6500f6bdee9997:1513370261,cf27fc9220d03300c0c4872711496e94:-1112929293,a2e4b0ded19033000375e141bb4e5ebc:-2082986641,b864345221d03300739bfe1ce775e853:1083370154,0252f0de699033003bbaad8f5e9033e4:-990634786,eb12f0de57903300bead8a1b1ae53e48:-1912024202,f230789e149033009fb03b12ee12fdbd:-150086953,0a10f81e9d903300591ca10239b31eb6:1197048420,fbefec1e6c9033005d2c15d2bddb901e:-914420726,4f9fa0da859033003d73b2062e1a2285:-373588703,ebfe6c5e8b903300b5e2a3aef601921a:-330551902,d7de2c5e889033002af7d0fa8743f6b4:-1183785420,5a6dac1e2b90330010ae82eb1dae0ae6:-1022814760,d41d641e89903300759826e61f75c74d:-1930175401,987c601a32903300b527345e1a449634:-1867566950,efdba0da7f903300cff8fcf1d1d1d22d:1587668029,4bea24daed9033001523bf484d0ec024:918605257,12baa0da8790330093e7ebdd5c993419:143571270,74ba60dab6903300e375b9978a4455cc:845116752,959a20da4b90330057b096ef9dc8f799:980997598,efe9ac5a0a9033008d8a0b0e736a8dc5:1783035727,1e39ec5a249033003be4012b3d566eff:-2048233107,50e8245a189033009bd37cdc446d3422:787465035,12b8acd6e79033009bdd444459892dac:-430268570,99a5201add903300e38b830065d0a857:1320515734,2a6568d6a290330078a71435a35193fe:-1124983170,5c0524d6e2903300d41f5237040f29e8:-473728677,0ee428d6e1903300995378029ca2b290:1212954141,44d4ec9ab5503300aae2c043e2f236ce:-1378852300,bd84a4de015033003d92da2f1039b37d:-1421832567,7e14a4da4550330042763a0802cf585c:349902500,b2e3ac96a79033009cf94984417a6d9d:-694756830,f7689012d1903300976daf84b75932bf:1954739296,9d6858de025033004f45779a5844cdfb:-1954523345,264810126590330045c7572dc9356fd2:-565745520,bd37d85eb3503300afd63a1254404ec5:732638718,22d5589e32503300b9b688fd974c3389:-1607736861,a345905e745033000fdc7c439f10beeb:-330265600,a78454dade503300224cdfbc95de535f:299696837,245494da665033007ce97dc953767f65:1510602175,833194da0e503300ac17fa0d599ff944:-1938724289,edd058da8550330082b0c3629abad3d3:-1011808698,71b018dac6503300faccaf3674c6f183:748594682,db7094da4850330051010a5bcb49ce3c:98559757,3a6054dacc5033004bf2407e89beb451:-1344558147,b9dfcc9a425033008cb39ea03d5f2d7c:807110169,94dfcc9ab95033000c91d68f21a06d49:1473433975,3d8f0c9a85503300f065c344c2942321:-1708795648,9a2f885a5950330038e3566925cce785:635791579,d1ce4c5a6d5033006785e85347fca0a4:-1126281288,4c3e4c1a1d5033007d05023ba09ab657:-961808629,0c1e4c5a43503300ff9ca32a24d83c9c:-851507887,84cd885acf503300275b4e7751064540:-1698954123,5a8b8cd263503300c1f47124e84098c0:-1427010915,f96b8c56db50330061b7fe7793ea7b6a:42500657,6a3b8cd22f503300c33be7c961144876:-340845543,12aa88d60b503300bbb0de730e936d54:1675857341,6f2a8416cf5033004e1a2df31abe9513:1528562119,91460cd23850330063fcd8a9adf6db16:-2012983087,35158cd26550330023cdb11370566669:-22655988,6d648cd28a503300e9f1ca1d2e299161:-1357251237,3824c8d248503300ceb5852e7fdde9c2:1925281346,7d04c092ab5033008e046e13a885173c:-1082361091,07a300d2be5033002b6f2221fbeed846:400489794,3ef24c5245503300b72e6f71770022b6:-1744548690,76c288924150330073cea75094a3fbb9:-1098584960,34920892f350330035a1b09d2cbc4129:1323660370,41720c527650330058283344581cd0d8:1219943834,4e320892915033004f1b13bc00621321:196910573,e612849221503300fc168f9fdbbdcb92:-2069317421,a4b14812b150330014c05d1bb60727c9:108343044,4a118812785033001fd75157f1a3889d:31507509,9e2e7bceab1033001a21a20e594016b4:1770490181,06ad77ce6a1033005d9775a4240f1c18:1267991078,f58d3bcaa3103300a71536bec004c5c3:1862475951,f84d7b4e881033004a50b803391a2337:375496646,5c2cbb8e3110330060520a59ade34316:-836445852,66d73bca48103300c98b1ef74637719b:-2028100911,10373bca121033004b85419d02bd7c94:-273940663,ccf53f8ae51033009ecc1e7cc55bdba2:-135122224,04b4338a841033001e34fd02d540b9a1:1293106385,203b2742211033002d23755625fb06f0:-1343896224,5ec92f02a8103300f937faa4ca086248:1684141829,30cb004e1a5033009677c3e6e7c625c6:1413976337,959b040e74503300910f6500e8fa2bfa:-821529555,5a0bcc4e92503300aab0a867436b73d8:-1465435301,1728cc4e55503300241106bbed5f86d1:1232909190,5566c40e9b503300ecf4f78a887daf20:91626334,28464c0ee15033002654414284bf6203:1565282842,b2f58cca555033001654f5ca82569095:208404557,32b5840ecd503300e925b32aaf20543e:951332779,c5a548cae1503300ab689cd2a937cb6c:-82272074,c175040e79503300dcf6b968e60329a8:-2018568754,63c48c8afc503300c1a8a76f7ccfb9c7:834309300,77b400caba503300c2fa86dcd4acc284:-633169983,6b4448ca5850330032f487dbbcfc2302:-519438734,16634c8ac850330064ad004c96a44312:-936994011,3d438c8a5c5033009f3ba1f6ce3e7fbf:-1007219360,c513488ad9503300ba0a7dd8fba2b79f:-1680692865,05b2c44aba5033006c27795f747d4c7f:-1718635547,c702080a86503300eeeffcc9413214d7:-111308723,94a1000a675033003f5becf32ea49f3b:2147396411,7bf0004a62503300763e836011d4fbc3:-695367062,57a0044af75033009a00d2176cdc2a45:-804440650,7f4088c658503300c248159cea6027cc:127440117,eedfb739675033004afa0f0f983ca4e3:-707230277,488f37b54c503300a46c5490685f5467:958899367,495f3ff577503300ede0de087d5ddc0b:1607888221,82ae33399f5033000207ec03d87c1511:-458034099,451ebfb5fe50330037ebf6b62c717fb1:1688809958,c18db3f59550330088bf733224aef85d:119249510,445d33f5b35033005fbd6f84b1a66e2e:-1024160273,e81df7750f5033009164a5617b823950:-1923608603,bf1c37b531503300b6d972a3cb06b754:1688253274,2eab37755b503300319d9613c0a8c49c:746158468,d71bbb75885033000a11c15bd9704d45:-1554647173,b700b7bdc9103300e150e3fca946c000:-1238248268,eedfeb7d3d103300d4b0d56d5a39f8e8:1250738177,a56fa77d14103300fc3c5a05f5e590a2:24365499,1e6c67b9041033004090ea365aa6fbfb:-403084180,a62c63794e1033001a07a701d4d97103:-128617196,1adb6779591033000e0e93f221b28e63:1674071024,e79aeb396c1033000119501e34d4d185:-1334957399,8c3a67b92c103300efdfc216db67f8dd:809575493,3c1a237948103300492967e99967b50a:785307638,18e9af39b8103300b619174c0093c59d:431405496,72a7e739c310330024ff360b4d20375c:1637927916,91e26b314410330013de67b9fbe1c8da:-550081815,aaa2e375f2103300c063d0687b51ec5f:952241578</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>m2m_sp_dependency_js_include_9523ab314f10330070cf4a10a310c7ec</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="Definitions">9d032b754f10330070cf4a10a310c78f</sp_dependency><sp_js_include display_value="definitions.js">35136b754f10330070cf4a10a310c7ab</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:04:46</sys_created_on><sys_id>9523ab314f10330070cf4a10a310c7ec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Definitions.definitions.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_9523ab314f10330070cf4a10a310c7ec</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:04:46</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload><payload_hash>-1577235238</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>38525b424f703300ad404a10a310c7bd</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2d00000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>Definitions.definitions.js</target_name><type>Dependency JS Includes</type><update_domain>global</update_domain><update_guid>5d23ab315f103300f66e07403c1104ed</update_guid><update_guid_history>5d23ab315f103300f66e07403c1104ed:-1577235238</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_portal_69ca9f1f4f669740e73ca90f0310c702</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_portal"&gt;&lt;sp_portal action="INSERT_OR_UPDATE"&gt;&lt;css_variables&gt;rat{&amp;#13;
+color:black;&amp;#13;
+}&lt;/css_variables&gt;&lt;default&gt;false&lt;/default&gt;&lt;homepage display_value="blank"&gt;d48330ffdb05a304ac208a264a96196c&lt;/homepage&gt;&lt;icon/&gt;&lt;kb_knowledge_base/&gt;&lt;kb_knowledge_page/&gt;&lt;login_page/&gt;&lt;logo/&gt;&lt;notfound_page/&gt;&lt;quick_start_config&gt;&lt;![CDATA[//Used to render non-customer-facing portal widgets (such as update documentation, rapid application testing, etc) ]]&gt;&lt;/quick_start_config&gt;&lt;sc_catalog/&gt;&lt;sc_catalog_page/&gt;&lt;sc_category_page/&gt;&lt;sp_chat_queue/&gt;&lt;sp_rectangle_menu/&gt;&lt;sqanda_knowledge_base/&gt;&lt;sys_class_name&gt;sp_portal&lt;/sys_class_name&gt;&lt;sys_created_by&gt;peter.cawdron&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-06-12 23:18:57&lt;/sys_created_on&gt;&lt;sys_id&gt;69ca9f1f4f669740e73ca90f0310c702&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generic Portal&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_portal_69ca9f1f4f669740e73ca90f0310c702&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-21 04:27:43&lt;/sys_updated_on&gt;&lt;theme/&gt;&lt;title&gt;Generic Portal&lt;/title&gt;&lt;url_suffix&gt;generic&lt;/url_suffix&gt;&lt;/sp_portal&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=69ca9f1f4f669740e73ca90f0310c702"/&gt;&lt;/record_update&gt;</payload><payload_hash>1446225257</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>38525b424f703300ad404a10a310c7c0</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2e70000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>Generic Portal</target_name><type>Service Portal</type><update_domain>global</update_domain><update_guid>51682379221033006c7a42cd92288702</update_guid><update_guid_history>51682379221033006c7a42cd92288702:1446225257,6f386b3906103300a42d9a32682bbe06:-779522319,cd435cfd10272300c2c4bfd26c49a466:1421990325,79b20ccee7232300f76c06f86dd2be85:568497867,6db20cce2a232300dae78d11b9bdc96f:0,cd435cfd10272300c2c4bfd26c49a466:1421990325,659b1b105c566b004ea3e164f5f822d4:-1654625772,1dea13f6ac312300022529e597e4c16a:169611860,6f1ad3b6d3312300e26dbc3e3376f5f3:-50719251,9a199b76f63123007d3b58f54f4cd0b9:1257366516,77f89f361b31230055847696956225f0:-1230350122,6efa9f1f9666974001ef54d9e942220d:1141112812,6efa9f1f9666974001ef54d9e942220d:1141112812</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_instance_e998afb54f10330070cf4a10a310c78f</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">6035800e4f50330070cf4a10a310c724</sp_column><sp_widget display_value="+update set documentation">6aa227314f10330070cf4a10a310c790</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:28:33</sys_created_on><sys_id>e998afb54f10330070cf4a10a310c78f</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_e998afb54f10330070cf4a10a310c78f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:37</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=e998afb54f10330070cf4a10a310c78f"/></record_update>]]></payload><payload_hash>577173795</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>3c525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3570000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name/><type>Instance</type><update_domain>global</update_domain><update_guid>2535ccca0a503300395a63e5f503d0d1</update_guid><update_guid_history>2535ccca0a503300395a63e5f503d0d1:577173795,ea15cc4ac5503300c8e1cf991ff57b13:1208070700,3598afb553103300e27b713c4d8d8e91:826110112</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>m2m_sp_widget_dependency_dc136b754f10330070cf4a10a310c71c</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Definitions">9d032b754f10330070cf4a10a310c78f</sp_dependency><sp_widget display_value="+update set documentation">6aa227314f10330070cf4a10a310c790</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:04:26</sys_created_on><sys_id>dc136b754f10330070cf4a10a310c71c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Definitions.+update set documentation</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_dc136b754f10330070cf4a10a310c71c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:04:26</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload><payload_hash>-319255691</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>70525b424f703300ad404a10a310c7be</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2c90000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>Definitions.+update set documentation</target_name><type>Widget Dependency</type><update_domain>global</update_domain><update_guid>d8136b75331033005b8c319acd71f01e</update_guid><update_guid_history>d8136b75331033005b8c319acd71f01e:-319255691</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_row_ec35808a4f50330070cf4a10a310c75a</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Update Set Documentation - Container 1">ea8823794f10330070cf4a10a310c769</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:33</sys_created_on><sys_id>ec35808a4f50330070cf4a10a310c75a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_ec35808a4f50330070cf4a10a310c75a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_row></record_update>]]></payload><payload_hash>670363620</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>70525b424f703300ad404a10a310c7c1</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a32f0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>1</target_name><type>Row</type><update_domain>global</update_domain><update_guid>ec35800ed150330010181129881f0821</update_guid><update_guid_history>ec35800ed150330010181129881f0821:670363620</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_page_d48330ffdb05a304ac208a264a96196c</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>blank</id><internal>false</internal><public>false</public><roles/><short_description>Blank page to avoid the default service portal from inadvertantly rendering in Generic</short_description><sys_class_name>sp_page</sys_class_name><sys_created_by>vito1</sys_created_by><sys_created_on>2018-10-16 07:01:25</sys_created_on><sys_id>d48330ffdb05a304ac208a264a96196c</sys_id><sys_mod_count>5</sys_mod_count><sys_name>blank</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_d48330ffdb05a304ac208a264a96196c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:26:46</sys_updated_on><title>blank</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=d48330ffdb05a304ac208a264a96196c"/></record_update>]]></payload><payload_hash>-867587114</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>74525b424f703300ad404a10a310c7c0</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2df0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>blank</target_name><type>Page</type><update_domain>global</update_domain><update_guid>ef28af75931033004b5b5ff574645960</update_guid><update_guid_history>ef28af75931033004b5b5ff574645960:-867587114,0975d47143672300758425f7d45df994:640898454,e5b20cce4f2323002a4bb8de9e2e0b79:984860810,0975d47143672300758425f7d45df994:640898454,897b17102b566b00f1c08b87ea1c60e3:-752511612,70da1bb61c31230038dcfbf88abfb5a6:443115235,74ed33284151e7043fdc5decdafb7c58:1337595624,009370ff5705a3046d6c3ceb951a350d:1396338489</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_dependency_9d032b754f10330070cf4a10a310c78f</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module/><name>Definitions</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:04:26</sys_created_on><sys_id>9d032b754f10330070cf4a10a310c78f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Definitions</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_9d032b754f10330070cf4a10a310c78f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:04:26</sys_updated_on></sp_dependency></record_update>]]></payload><payload_hash>617112505</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>78525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2a00000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>Definitions</target_name><type>Widget Dependency</type><update_domain>global</update_domain><update_guid>d0136b754a10330081de79fc54a4f71c</update_guid><update_guid_history>d0136b754a10330081de79fc54a4f71c:617112505</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_ui_script_ac33eb754f10330070cf4a10a310c713</name><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_script"&gt;&lt;sys_ui_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Provides a JSON object containing the definitions of update set tables and fields&lt;/description&gt;&lt;global&gt;false&lt;/global&gt;&lt;name&gt;definitions.js&lt;/name&gt;&lt;script&gt;&lt;![CDATA[//You can edit this text file to add defintions or to exclude repetitive low-value items from your update set documentation, seeing them only in summary
+
+var exclusions = ['Column','Container','Row','Indexes', 'UI Action Role', 'Data Policy Rule', 'Dictionary Entry Override', 'System Property Category', 'Supports Service Portal search functionality', 'Table Subscription Configuration', 'Installation Exit', 'Contained Role', 'Variables', 'Form Sections', 'Access Roles', 'System Property Category', 'Embedded List Control','Field Label','Test Step', 'Test Suite Test','Instance of Simple List'];
+
+var definitions = [
+   {
+      "name": "Access Control",
+      "table": "sys_security_acl",
+      "fields": "name,description,operation,type",
+      "description": "Access Controls are security rules which define access/restriction on tables and records. Normally these are managed by roles, but they can exploit any particular aspect of a user's profile, such as their location or their department."
+   },
+   {
+      "name": "Access Roles",
+      "table": "sys_security_acl_role",
+      "fields": "sys_security_acl,sys_user_role",
+      "description": "Defines the roles applicable to ACL security"
+   },
+   {
+      "name": "Angular Providers",
+      "table": "m2m_sp_ng_pro_sp_widget",
+      "fields": "sys_name,widget",
+      "description": "Angular components that can be reused in multiple portal widgets"
+   },
+   {
+      "name": "Angular ng-template",
+      "table": "sp_ng_template",
+      "fields": "sys_name,sp_widget,sys_update_name,package",
+      "description": "Angular templates are used to customise behaviour of the service portal"
+   },
+   {
+      "name": "Application Menu",
+      "table": "sys_app_application",
+      "fields": "sys_name,description,roles,order",
+      "description": "Menus created or modified to improve navigation of ServiceNow"
+   },
+   {
+      "name": "Assessment Metric",
+      "table": "asmt_metric",
+      "fields": "name,description,metric_type,template,reference_table",
+      "description": "Metrics defined and used to evaluate assessable records"
+   },
+   {
+      "name": "Assessment Metric Type",
+      "table": "asmt_metric_type",
+      "fields": "name,description,table,job,roles",
+      "description": "Metric types used in assessments"
+   },
+   {
+      "name": "Assessment Question Choice",
+      "table": "",
+      "fields": "question,value",
+      "description": "Provides a list of questions for assessments"
+   },
+   {
+      "name": "Assignment Rule",
+      "table": "sysrule_assignment",
+      "fields": "category,subcategory,assignment_group,assigned_to",
+      "description": "Assignment rules govern how tasks are distributed to resolver groups"
+   },
+   {
+      "name": "Branch",
+      "table": "",
+      "fields": "name,description",
+      "description": "List of branches imported in the system"
+   },
+   {
+      "name": "Business Rule",
+      "table": "sys_script",
+      "fields": "name,description,when,condition",
+      "description": "Business rules ensure business logic can be enforced when records are viewed, created, updated or deleted"
+   },
+   {
+      "name": "Business Section",
+      "table": "",
+      "fields": "name,description",
+      "description": "List of imported business sections"
+   },
+   {
+      "name": "CSS Include",
+      "table": "sp_css_include",
+      "fields": "name,sp_css,source,url",
+      "description": "CSS included to customise service portal look and feel"
+   },
+   {
+      "name": "Carousel Slide",
+      "table": "sp_carousel_slide",
+      "fields": "name,description,carousel,background",
+      "description": "Service portal carousel slides"
+   },
+   {
+      "name": "Cart Layout",
+      "table": "sc_layout",
+      "fields": "sys_name,title,short_description",
+      "description": "Definition of layout and functionality of the service catalogue cart"
+   },
+   {
+      "name": "Catalog",
+      "table": "sc_catalog",
+      "fields": "sys_name,description,manager,editors",
+      "description": "Catalogues provide users the ability to request catalogue items such as service and product offerings"
+   },
+   {
+      "name": "Catalog Client Scripts",
+      "table": "catalog_script_client",
+      "fields": "sys_name,description,cat_item,type,variable_set,field",
+      "description": "Client scripts change the way a form behaves in response to user input"
+   },
+   {
+      "name": "Catalog Item",
+      "table": "sc_cat_item",
+      "fields": "sys_name,description,sc_catalogs,category,workflow",
+      "description": "Items and services that can be requested through the service catalogue. The availability of these items is determined by user criteria."
+   },
+   {
+      "name": "Catalog UI Policy",
+      "table": "catalog_ui_policy",
+      "fields": "variable_set,table,short_description,catalog_item,conditions,catalog_conditions",
+      "description": "Catalog UI policies define the behaviour of fields in catalog forms. For example, fields may become visible and/or mandatory depending on user inputs in other fields."
+   },
+   {
+      "name": "Catalog UI Policy Action",
+      "table": "catalog_ui_policy_action",
+      "fields": "ui_policy,variable_set,variable,field,mandatory,disabled,visible",
+      "description": "Catalogue UI Policy Actions are client-side logic used by Catalogue UI Policies. They can set field attributes to mandatory, visible, read-only"
+   },
+   {
+      "name": "Category",
+      "table": "sc_category",
+      "fields": "sys_name,description,sc_catalog",
+      "description": "Categories allow service catalogue items to be classified into logical groups"
+   },
+   {
+      "name": "Changes Category",
+      "table": "",
+      "fields": "name,description",
+      "description": "Categories for standard change templates"
+   },
+   {
+      "name": "Choice list",
+      "table": "",
+      "fields": "name,description",
+      "description": "Choice lists allow users to select a value from a pre-defined set of choices"
+   },
+   {
+      "name": "Client Script",
+      "table": "sys_script_client",
+      "fields": "name,description,type,field,ui_type",
+      "description": "Scripts to customise behaviour of ServiceNow forms"
+   },
+   {
+      "name": "Company",
+      "table": "core_company",
+      "fields": "name,parent,notes",
+      "description": "List of companies and vendors imported in the system"
+   },
+   {
+      "name": "Contract",
+      "table": "ast_contract",
+      "fields": "name,description,vendor",
+      "description": "Contracts imported in the System"
+   },
+   {
+      "name": "Contract Model",
+      "table": "cmdb_contract_product_model",
+      "fields": "name,description,manufacturer,product_catalog_item,owner",
+      "description": "Imported or customised contract models"
+   },
+   {
+      "name": "Dashboard",
+      "table": "pa_dashboards",
+      "fields": "name,group,groups,owner,sys_overrides",
+      "description": "Customised dashboards that provide customer specific reports in a concise format"
+   },
+   {
+      "name": "Dashboard Permissions",
+      "table": "pa_dashboards_permissions",
+      "fields": "dashboard,group,role,user",
+      "description": "Restrict access to dashboards as needed"
+   },
+   {
+      "name": "Data Lookup",
+      "table": "",
+      "fields": "name,source_table,matcher_table,active",
+      "description": "Data Lookup Definitions govern how calculations are performed on various tables"
+   },
+   {
+      "name": "Data Lookup Definitions",
+      "table": "dl_definition",
+      "fields": "name,source_table,matcher_table,active",
+      "description": "Data Lookup Definitions govern how calculations are performed on various tables"
+   },
+   {
+      "name": "Data Policy",
+      "table": "sys_data_policy2",
+      "fields": "sys_name,description,short_description,model_table,conditions",
+      "description": "Data policies are rules that ensure information satisfies specific customer requirements"
+   },
+   {
+      "name": "Data Source",
+      "table": "sys_data_source",
+      "fields": "name,database_name,connection_url,format,file_retrieval_method,type",
+      "description": "A list of custom data sources that allow custom data to be loaded into ServiceNow "
+   },
+   {
+      "name": "Department",
+      "table": "cmn_department",
+      "fields": "name,description,company,parent",
+      "description": "A list of departments imported into the system"
+   },
+   {
+      "name": "Dictionary",
+      "table": "",
+      "fields": "name,column_label,internal_type,reference",
+      "description": "Field dictionaries define details for each table and the definition for every column on each table"
+   },
+   {
+      "name": "Email Client Canned Messages",
+      "table": "sys_email_canned_message",
+      "fields": "name,description",
+      "description": "A type of email template that can be selected from a ServiceNow form when manually sending a client email "
+   },
+   {
+      "name": "Email Script",
+      "table": "sys_script_email",
+      "fields": "name,description",
+      "description": "Scripts to dynamically create email body with a common look and feel, consistent with the customer branding."
+   },
+   {
+      "name": "Email Template",
+      "table": "sysevent_email_template",
+      "fields": "name,description",
+      "description": "Customised email templates ensure consistency for end-users"
+   },
+   {
+      "name": "Event Registration",
+      "table": "sysevent_register",
+      "fields": "name,description",
+      "description": "Registration of events to be used by notifications"
+   },
+   {
+      "name": "Execution Plan",
+      "table": "sc_cat_item_delivery_plan",
+      "fields": "name,short_description,calendar",
+      "description": "Execution plans define how a catalogue item is procured, configured, and installed"
+   },
+   {
+      "name": "Execution Plan Task",
+      "table": "sc_cat_item_delivery_task",
+      "fields": "name,short_description,delivery_plan",
+      "description": "Execution plan tasks are assigned to a fulfillment group and represent the work to be completed as part of the overall request fulfillment process."
+   },
+   {
+      "name": "Field class",
+      "table": "sys_glide_object",
+      "fields": "name,description",
+      "description": "Describes the types of field used in service catalogue forms"
+   },
+   {
+      "name": "Form Layout",
+      "table": "",
+      "fields": "name,description",
+      "description": "The layout of the forms can be customised by adding, removing or rearranging fields"
+   },
+   {
+      "name": "Gauge",
+      "table": "sys_gauge",
+      "fields": "name,description",
+      "description": "Gauges are added to specific dashboards to visual data in various ways"
+   },
+   {
+      "name": "Group",
+      "table": "sys_user_group",
+      "fields": "name,manager,email,parent",
+      "description": "Defines user groups, which normally contain roles affecting the access of users within ServiceNow"
+   },
+   {
+      "name": "Group Member",
+      "table": "sys_user_grmember",
+      "fields": "group,user",
+      "description": "Contains the membership of each security group"
+   },
+   {
+      "name": "Group Role",
+      "table": "sys_group_has_role",
+      "fields": "group,role",
+      "description": "Contains a list of roles applicable to user groups"
+   },
+   {
+      "name": "Group Type",
+      "table": "sys_user_group_type",
+      "fields": "name,description",
+      "description": "Define the resolver group types"
+   },
+   {
+      "name": "Header | Footer",
+      "table": "sp_header_footer",
+      "fields": "name,description",
+      "description": "Service portal header and footer customisation used to improve branding and look and feel"
+   },
+   {
+      "name": "Images",
+      "table": "db_image",
+      "fields": "name,description",
+      "description": "Images imported in the system to customize the branding and look and feel of the system"
+   },
+   {
+      "name": "Import Export Map",
+      "table": "sys_impex_map",
+      "fields": "name,description",
+      "description": "A transform map used to import or export data"
+   },
+   {
+      "name": "Inbound Email Actions",
+      "table": "sysevent_in_email_action",
+      "fields": "name,description",
+      "description": "Inbound email actions define the actions an instance takes when receiving an email, such as creating a new call or an incident"
+   },
+	 {
+      "name": "Input Variables",
+      "table": "atf_input_variable",
+      "fields": "label,element",
+      "description": "Custom variable input fields"
+   },
+   {
+      "name": "Instance",
+      "table": "sp_instance",
+      "fields": "sp_widget,title,sys_scope,roles",
+      "description": "Captures the instances of widgets within the portal"
+   },
+   {
+      "name": "Instance with Link",
+      "table": "sp_instance_link",
+      "fields": "name,description",
+      "description": "Entries and boxes to customise the service portal and improve its usability"
+   },
+   {
+      "name": "Instance with Menu",
+      "table": "sp_instance_menu",
+      "fields": "name,description",
+      "description": "Menu bars customised to improve look and feel of the service portal, making it consistent with the customer's branding"
+   },
+   {
+      "name": "LDAP OU Definition",
+      "table": "ldap_ou_config",
+      "fields": "name,description",
+      "description": "List of OUs (organisational units) used to filter users and groups being imported from LDAP"
+   },
+   {
+      "name": "LDAP Server",
+      "table": "ldap_server_config",
+      "fields": "name,description",
+      "description": "LDAP server configuration for SSO (single sign on)"
+   },
+   {
+      "name": "LDAP Server URL",
+      "table": "ldap_server_url",
+      "fields": "name,description",
+      "description": "LDAP serves configuration used for Single-Sign-On"
+   },
+   {
+      "name": "List Control",
+      "table": "sys_ui_list_control",
+      "fields": "name,description",
+      "description": "Customisations made on the controls available in lists"
+   },
+   {
+      "name": "List Layout",
+      "table": "",
+      "fields": "name,description",
+      "description": "Layout of list views to include relevant fields"
+   },
+   {
+      "name": "Location",
+      "table": "imp_location",
+      "fields": "name,description",
+      "description": "A list of locations loaded into ServiceNow"
+   },
+   {
+      "name": "Maintenance Schedule",
+      "table": "cmn_schedule_maintenance",
+      "fields": "name,description",
+      "description": "Maintenance schedules are used by change management to determine when changes occur"
+   },
+   {
+      "name": "Menu Item",
+      "table": "menu_item",
+      "fields": "name,description",
+      "description": "Items defined for the menus available through the service portal"
+   },
+   {
+      "name": "Metric Category",
+      "table": "asmt_metric_category",
+      "fields": "name,description",
+      "description": "Define how survey assessments are categorised"
+   },
+   {
+      "name": "Module",
+      "table": "sys_app_module",
+      "fields": "name,description",
+      "description": "Modules (menu entries) created or modified to improve navigation of ServiceNow"
+   },
+   {
+      "name": "Notification",
+      "table": "sysevent_email_action",
+      "fields": "name,description",
+      "description": "Email notifications are used to inform end users and resolver groups about relevant events"
+   },
+   {
+      "name": "Order guide",
+      "table": "sc_cat_item_guide",
+      "fields": "name,description",
+      "description": "Order guides are a special type of catalogue entry that allows a number of catalogue items to be grouped together into a single form. Once approved, the various items within the order guide may follow different workflows"
+   },
+   {
+      "name": "Page",
+      "table": "content_page",
+      "fields": "name,description",
+      "description": "Pages in the service portal customised to provide customer's specific functionalities"
+   },
+   {
+      "name": "Record Producer",
+      "table": "sc_cat_item_producer",
+      "fields": "name,description",
+      "description": "Record producers are a particular type of catalogue items that allows users to create a record, such as an incident."
+   },
+   {
+      "name": "Relationship",
+      "table": "sys_relationship",
+      "fields": "name,description",
+      "description": "Advanced relationships between tables to create customer specific related lists"
+   },
+   {
+      "name": "Report",
+      "table": "sys_report",
+      "fields": "name,description",
+      "description": "Reports allow data to be represented in a variety of ways visually to make patterns easier to understand"
+   },
+   {
+      "name": "Resource Configuration",
+      "table": "cxs_res_context_config",
+      "fields": "name,description",
+      "description": "Supports Service Portal search functionality."
+   },
+   {
+      "name": "Risk Conditions",
+      "table": "risk_conditions",
+      "fields": "name,description",
+      "description": "Rules that define risk and impact conditions for change records"
+   },
+   {
+      "name": "Role",
+      "table": "sys_user_role",
+      "fields": "name,description",
+      "description": "Roles are used to define which user can access specific forms and tables, and what functionality is available to them"
+   },
+   {
+      "name": "SLA Definition",
+      "table": "contract_sla",
+      "fields": "name,description",
+      "description": "Service Level Agreements can be created on any table based on the task table, such as incidents, requests and changes"
+   },
+   {
+      "name": "Scheduled Data Import",
+      "table": "scheduled_data_import",
+      "fields": "name,description",
+      "description": "Scheduled process to import and synch data from LDAP"
+   },
+   {
+      "name": "Script Include",
+      "table": "sys_script_include",
+      "fields": "name,description",
+      "description": "Server-side Javascript code that can be reusable by multiple system components (business rules, workflows, etc)"
+   },
+   {
+      "name": "Search Context",
+      "table": "cxs_context_config",
+      "fields": "name,description",
+      "description": "Contextual search definitions"
+   },
+   {
+      "name": "Search Resource Context Property",
+      "table": "cxs_res_context_config_prop",
+      "fields": "name,description",
+      "description": "Configures the search functionality within the service portal"
+   },
+   {
+      "name": "Search Source",
+      "table": "m2m_sp_portal_search_source",
+      "fields": "name,id,page,sys_scope,roles",
+      "description": "Extends the ability of the service portal to search other data sources, whether that's knowledge, catalogue items, or any other type of information. "
+   },
+   {
+      "name": "Service Portal",
+      "table": "sp_portal",
+      "fields": "name,description",
+      "description": "Base configuration of the service portal. Customers may have more than one portal serving different purposes."
+   },
+   {
+      "name": "Style Sheet",
+      "table": "content_css",
+      "fields": "name,sys_scope",
+      "description": "Stylesheet defined for the service portal to allow UI customization for requestors."
+   },
+   {
+      "name": "Stylesheets",
+      "table": "m2m_sp_theme_css_include",
+      "fields": "name,short_description",
+      "description": "Stylesheets define the way ServiceNow appears to fulfillment users."
+   },
+   {
+      "name": "System Property",
+      "table": "sys_properties",
+      "fields": "name,description",
+      "description": "Base System configurations customised. These may differ between production and development environments"
+   },
+   {
+      "name": "Tab",
+      "table": "pa_tabs",
+      "fields": "name,description",
+      "description": "Dashboard tabs created in ServiceNow"
+   },
+   {
+      "name": "Table",
+      "table": "sys_db_object",
+      "fields": "name,description",
+      "description": "Tables are added or customised to support customer specific functionalities"
+   },
+   {
+      "name": "Table Transform Map",
+      "table": "sys_transform_map",
+      "fields": "name,description",
+      "description": "Transformation maps are used to import data in the system from an external data source"
+   },
+   {
+      "name": "Theme",
+      "table": "sp_theme",
+      "fields": "name,description",
+      "description": "Service portal themes customise the branding and overall look and feel"
+   },
+   {
+      "name": "Trigger Condition",
+      "table": "asmt_condition",
+      "fields": "name,description",
+      "description": "Conditions that trigger the generation of a customer survey"
+   },
+   {
+      "name": "UI Action",
+      "table": "sys_ui_action",
+      "fields": "name,description",
+      "description": "Buttons and links added to ServiceNow forms to allow users to undertake specific actions"
+   },
+   {
+      "name": "UI Page",
+      "table": "sys_ui_page",
+      "fields": "name,description",
+      "description": "Custom pages/popups to customize behaviour and add functionalities of ServiceNow"
+   },
+   {
+      "name": "UI Policy",
+      "table": "sys_ui_policy",
+      "fields": "name,table,short_description,conditions",
+      "description": "UI policies dynamically change information on a form given a specific condition. The changes are performed using either UI Policy Actions or scripts."
+   },
+   {
+      "name": "UI Policy Action",
+      "table": "sys_ui_policy_action",
+      "fields": "ui_policy,field,mandatory,visible,disabled",
+      "description": "UI Policy Actions are client-side logic used by UI Policies. They can set field attributes to mandatory, visible, read-only"
+   },
+   {
+      "name": "UI Script",
+      "table": "sys_ui_script",
+      "fields": "name,description",
+      "description": "Allows forms to dynamically change in response to user input "
+   },
+   {
+      "name": "UI View",
+      "table": "sys_ui_view",
+      "fields": "name,description",
+      "description": "Customised form views that include specific fields for a particular purpose"
+   },
+   {
+      "name": "User Criteria",
+      "table": "user_criteria",
+      "fields": "name,description",
+      "description": "Configurations to restrict access to records in Service Catalogue and Knowledge Base, as defined by the customer"
+   },
+   {
+      "name": "User Role",
+      "table": "sys_user_has_role",
+      "fields": "user,role",
+      "description": "A comprehensive list of all the roles a user has inherited by being part of a group"
+   },
+   {
+      "name": "Variable",
+      "table": "item_option_new",
+      "fields": "cat_item,record_producer_table,variable_set,question_text,name",
+      "description": "Variables defined in catalog items and record producers"
+   },{
+      "name": "Vendor Contact",
+      "table": "",
+      "fields": "name,description",
+      "description": "Vendor contacts imported in the system"
+   },
+   {
+      "name": "View Rule",
+      "table": "sysrule_view",
+      "fields": "name,description",
+      "description": "Rules used to enforce a specific form or list view for a table"
+   },
+   {
+      "name": "Welcome Page Section",
+      "table": "sys_home",
+      "fields": "name,description",
+      "description": "Defines how the welcome page appears when logging on"
+   },
+   {
+      "name": "Widget",
+      "table": "sys_widgets",
+      "fields": "name,id,description",
+      "description": "Widgets are components within the service portal and add functionality that improves the user experience."
+   },
+   {
+      "name": "Workflow",
+      "table": "wf_workflow",
+      "fields": "name,description",
+      "description": "Workflows created or customised (for changes, requests, SLAs, contracts) to fit a customer's business processes."
+   }
+];
+]]&gt;&lt;/script&gt;&lt;script_name/&gt;&lt;sys_class_name&gt;sys_ui_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-21 04:06:05&lt;/sys_created_on&gt;&lt;sys_id&gt;ac33eb754f10330070cf4a10a310c713&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;definitions.js&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_script_ac33eb754f10330070cf4a10a310c713&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-04-10 22:43:26&lt;/sys_updated_on&gt;&lt;ui_type&gt;1&lt;/ui_type&gt;&lt;use_scoped_format&gt;false&lt;/use_scoped_format&gt;&lt;/sys_ui_script&gt;&lt;/record_update&gt;</payload><payload_hash>-341292335</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>78525b424f703300ad404a10a310c7c2</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a36c0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>definitions.js</target_name><type>UI Script</type><update_domain>global</update_domain><update_guid>3ef22aa08f303300e19f7ea2d077f13c</update_guid><update_guid_history>3ef22aa08f303300e19f7ea2d077f13c:-341292335,976cc41a685033002ab81ec7565730c3:1768275829,c58f7b02db503300c5716e5c6b08ba34:1319190075,206fffcef71033006badcf967d5296e1:271615090,76fefbce1d10330006489107edc37e68:-1591607185,7915a775fa103300750ca691ded78a6d:2133510359,98736775ac103300979acd340bec6727:195347688</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_a835800e4f50330070cf4a10a310c722</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>3</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ec35808a4f50330070cf4a10a310c75a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:33</sys_created_on><sys_id>a835800e4f50330070cf4a10a310c722</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_a835800e4f50330070cf4a10a310c722</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>1571118876</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>7c525b424f703300ad404a10a310c7be</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3350000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>1</target_name><type>Column</type><update_domain>global</update_domain><update_guid>a435800e37503300fbd74f1770503923</update_guid><update_guid_history>a435800e37503300fbd74f1770503923:1571118876</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_db_view_table_1ce3ff314f50330070cf4a10a310c779</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:18:15</sys_created_on><sys_id>1ce3ff314f50330070cf4a10a310c779</sys_id><sys_mod_count>5</sys_mod_count><sys_name>sys_scope</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_table_1ce3ff314f50330070cf4a10a310c779</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:41:12</sys_updated_on><table>sys_scope</table><variable_prefix>sco</variable_prefix><view display_value="u_view_updateset_by_scope">a3933f314f50330070cf4a10a310c763</view><where_clause/></sys_db_view_table></record_update>]]></payload><payload_hash>117154607</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>7c525b424f703300ad404a10a310c7c1</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a30f0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>sys_scope</table><target_name>sys_scope</target_name><type>View Table</type><update_domain>global</update_domain><update_guid>b5393735e35033005f0d585681ac5721</update_guid><update_guid_history>b5393735e35033005f0d585681ac5721:117154607,0df8b3b1a350330060d4377543a77bcb:-658503119,26c53b71975033006a8c1031a963aaf2:-1509709389,34b5bf718b5033008951205359b26fbd:-676778828,fcd47b71915033003958b5c356e61cd8:-1991128925,e5f33f3190503300f5a71ad372e67209:-676778828</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_page_a68823794f10330070cf4a10a310c767</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>update_set_documentation</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:28:21</sys_created_on><sys_id>a68823794f10330070cf4a10a310c767</sys_id><sys_mod_count>0</sys_mod_count><sys_name>update_set_documentation</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_a68823794f10330070cf4a10a310c767</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:28:21</sys_updated_on><title>Update Set Documentation</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=a68823794f10330070cf4a10a310c767"/></record_update>]]></payload><payload_hash>1006258593</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>b0525b424f703300ad404a10a310c7c0</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2ed0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>update_set_documentation</target_name><type>Page</type><update_domain>global</update_domain><update_guid>ee88237953103300532865ec9102bc68</update_guid><update_guid_history>ee88237953103300532865ec9102bc68:1006258593</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_container_ea8823794f10330070cf4a10a310c769</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Update Set Documentation - Container 1</name><order>1</order><sp_page display_value="update_set_documentation">a68823794f10330070cf4a10a310c767</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:28:21</sys_created_on><sys_id>ea8823794f10330070cf4a10a310c769</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Update Set Documentation - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_ea8823794f10330070cf4a10a310c769</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:28:21</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload><payload_hash>1923912231</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>b4525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2f40000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>Update Set Documentation - Container 1</target_name><type>Container</type><update_domain>global</update_domain><update_guid>ae882379d9103300f5b2bc65ab36936a</update_guid><update_guid_history>ae882379d9103300f5b2bc65ab36936a:1923912231</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_ui_list_u_view_updateset_by_scope_null</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="u_view_updateset_by_scope" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>ups_name</element><list_id display_value="u_view_updateset_by_scope" element="NULL" name="u_view_updateset_by_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c2d93f354f50330070cf4a10a310c772</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_id>8ad93f354f50330070cf4a10a310c772</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>ups_description</element><list_id display_value="u_view_updateset_by_scope" element="NULL" name="u_view_updateset_by_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c2d93f354f50330070cf4a10a310c772</list_id><max_value>false</max_value><min_value>false</min_value><position>1</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_id>0ed93f354f50330070cf4a10a310c772</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>ups_state</element><list_id display_value="u_view_updateset_by_scope" element="NULL" name="u_view_updateset_by_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c2d93f354f50330070cf4a10a310c772</list_id><max_value>false</max_value><min_value>false</min_value><position>2</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_id>8ed93f354f50330070cf4a10a310c772</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sco_name</element><list_id display_value="u_view_updateset_by_scope" element="NULL" name="u_view_updateset_by_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c2d93f354f50330070cf4a10a310c772</list_id><max_value>false</max_value><min_value>false</min_value><position>3</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_id>02d93f354f50330070cf4a10a310c773</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on></sys_ui_list_element><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>sco_scope</element><list_id display_value="u_view_updateset_by_scope" element="NULL" name="u_view_updateset_by_scope" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c2d93f354f50330070cf4a10a310c772</list_id><max_value>false</max_value><min_value>false</min_value><position>4</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_id>82d93f354f50330070cf4a10a310c773</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>u_view_updateset_by_scope</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:43:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c2d93f354f50330070cf4a10a310c772</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_view_updateset_by_scope</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_list_u_view_updateset_by_scope_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:43:57</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload><payload_hash>1887560726</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>b4525b424f703300ad404a10a310c7c2</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a31b0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>u_view_updateset_by_scope</table><target_name>View updateset by scope</target_name><type>List Layout</type><update_domain>global</update_domain><update_guid>02d93f352a503300c9cbd86d49260e75</update_guid><update_guid_history>02d93f352a503300c9cbd86d49260e75:1887560726,68147371715033006456026269cfad9c:284432390</update_guid_history><update_set/><view>Default view</view></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_8115ccca4f50330070cf4a10a310c7f7</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">8915ccca4f50330070cf4a10a310c7f3</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:02</sys_created_on><sys_id>8115ccca4f50330070cf4a10a310c7f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_8115ccca4f50330070cf4a10a310c7f7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:02</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>-1204409730</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>b8525b424f703300ad404a10a310c7be</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3280000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>2</target_name><type>Column</type><update_domain>global</update_domain><update_guid>4d15cccabb503300187f1a7cbb085df7</update_guid><update_guid_history>4d15cccabb503300187f1a7cbb085df7:-1204409730</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_db_view_a3933f314f50330070cf4a10a310c763</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description/><label/><name>u_view_updateset_by_scope</name><plural/><sys_class_name>sys_db_view</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:17:24</sys_created_on><sys_id>a3933f314f50330070cf4a10a310c763</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_view_updateset_by_scope</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_db_view_a3933f314f50330070cf4a10a310c763</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:17:24</sys_updated_on></sys_db_view></record_update>]]></payload><payload_hash>-1916865357</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>b8525b424f703300ad404a10a310c7c1</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3070000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>u_view_updateset_by_scope</table><target_name>u_view_updateset_by_scope</target_name><type>Database View</type><update_domain>global</update_domain><update_guid>d1c37f3173503300242f5ec24ad373ce</update_guid><update_guid_history>d1c37f3173503300242f5ec24ad373ce:-1916865357</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_row_8915ccca4f50330070cf4a10a310c7f3</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>2</order><sp_column/><sp_container display_value="Update Set Documentation - Container 1">ea8823794f10330070cf4a10a310c769</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:02</sys_created_on><sys_id>8915ccca4f50330070cf4a10a310c7f3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_8915ccca4f50330070cf4a10a310c7f3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_row></record_update>]]></payload><payload_hash>-129403806</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>bc525b424f703300ad404a10a310c7c0</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3470000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>2</target_name><type>Row</type><update_domain>global</update_domain><update_guid>2c35800e1b5033004360da0848d8f927</update_guid><update_guid_history>2c35800e1b5033004360da0848d8f927:-129403806,c915ccca37503300bbc2099bb31d80f4:670363620</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_e435800e4f50330070cf4a10a310c725</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>3</order><size>3</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ec35808a4f50330070cf4a10a310c75a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:33</sys_created_on><sys_id>e435800e4f50330070cf4a10a310c725</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_e435800e4f50330070cf4a10a310c725</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>-1149087712</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f0525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3410000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>3</target_name><type>Column</type><update_domain>global</update_domain><update_guid>a035800e25503300518501cfaace6726</update_guid><update_guid_history>a035800e25503300518501cfaace6726:-1149087712</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_documentation_u_view_updateset_by_scope__en</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="" label="View updateset by scope" language="en" table="u_view_updateset_by_scope"><sys_documentation action="INSERT_OR_UPDATE"><element/><help/><hint/><label>View updateset by scope</label><language>en</language><name>u_view_updateset_by_scope</name><plural>View updateset by scopes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 05:17:24</sys_created_on><sys_id>c1c37f314f50330070cf4a10a310c7cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>View updateset by scope</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_documentation_u_view_updateset_by_scope__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 05:17:24</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload><payload_hash>-264985213</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f0525b424f703300ad404a10a310c7c2</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3000000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>u_view_updateset_by_scope</table><target_name>View updateset by scope</target_name><type>Field Label</type><update_domain>global</update_domain><update_guid>15c37f31f3503300dc3090d0118635cd</update_guid><update_guid_history>15c37f31f3503300dc3090d0118635cd:-264985213</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_column_6035800e4f50330070cf4a10a310c724</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">ec35808a4f50330070cf4a10a310c75a</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 06:33:33</sys_created_on><sys_id>6035800e4f50330070cf4a10a310c724</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_6035800e4f50330070cf4a10a310c724</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_column></record_update>]]></payload><payload_hash>1664926075</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f4525b424f703300ad404a10a310c7be</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a33b0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>2</target_name><type>Column</type><update_domain>global</update_domain><update_guid>2c35800eab5033005be2406c63169e24</update_guid><update_guid_history>2c35800eab5033005be2406c63169e24:1664926075</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sys_app_module_7ef0741e4f90330070cf4a10a310c79c</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="System Update Sets">a02b3c250a0a0b50000cc3543c6e463a</application><assessment/><content_page/><device_type/><filter table="sys_remote_update_set">stateINloaded,previewed^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="loaded,previewed"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint>Document the contents of your update sets</hint><homepage/><image>images/icons/update_sync.gif</image><link_type>DIRECT</link_type><map_page/><mobile_title>Retrieved Update Sets</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_remote_update_set</name><order>1000</order><override_menu_roles>false</override_menu_roles><query>/generic?id=update_set_documentation</query><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-22 04:23:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7ef0741e4f90330070cf4a10a310c79c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Document Update Sets</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_7ef0741e4f90330070cf4a10a310c79c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-22 04:23:20</sys_updated_on><timeline_page/><title>Document Update Sets</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload><payload_hash>609067746</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f4525b424f703300ad404a10a310c7c1</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a3620000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table>sys_remote_update_set</table><target_name>Document Update Sets</target_name><type>Module</type><update_domain>global</update_domain><update_guid>baf0b0dec1903300a08711b310f4a89b</update_guid><update_guid_history>baf0b0dec1903300a08711b310f4a89b:609067746</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_row_449823794f10330070cf4a10a310c714</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>3</order><sp_column/><sp_container display_value="Update Set Documentation - Container 1">ea8823794f10330070cf4a10a310c769</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:28:26</sys_created_on><sys_id>449823794f10330070cf4a10a310c714</sys_id><sys_mod_count>2</sys_mod_count><sys_name>3</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_449823794f10330070cf4a10a310c714</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 06:33:33</sys_updated_on></sp_row></record_update>]]></payload><payload_hash>-929171232</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>f8525b424f703300ad404a10a310c7c0</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a34d0000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>3</target_name><type>Row</type><update_domain>global</update_domain><update_guid>a435800e37503300d0ee0b3504fcbb2a</update_guid><update_guid_history>a435800e37503300d0ee0b3504fcbb2a:-929171232,c915ccca4b5033001ea0c9f1e60a83f9:-129403806,089823795b103300c1e018087b971015:670363620</update_guid_history><update_set/><view/></sys_update_xml><sys_update_xml action="INSERT_OR_UPDATE"><action>INSERT_OR_UPDATE</action><application display_value="Global">global</application><category>customer</category><comments/><name>sp_js_include_35136b754f10330070cf4a10a310c7ab</name><payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>definitions.js</display_name><source>local</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2019-03-21 04:04:46</sys_created_on><sys_id>35136b754f10330070cf4a10a310c7ab</sys_id><sys_mod_count>1</sys_mod_count><sys_name>definitions.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script display_value="definitions.js">ac33eb754f10330070cf4a10a310c713</sys_ui_script><sys_update_name>sp_js_include_35136b754f10330070cf4a10a310c7ab</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-03-21 04:06:18</sys_updated_on><url/></sp_js_include></record_update>]]></payload><payload_hash>82724528</payload_hash><remote_update_set display_value="(JDS) Update Set Documentation v022">f4521b424f703300ad404a10a310c760</remote_update_set><replace_on_upgrade>false</replace_on_upgrade><sys_created_by>admin</sys_created_by><sys_created_on>2019-04-15 18:01:10</sys_created_on><sys_id>fc525b424f703300ad404a10a310c7bf</sys_id><sys_mod_count>0</sys_mod_count><sys_recorded_at>16a21f5a2d70000001</sys_recorded_at><sys_updated_by>admin</sys_updated_by><sys_updated_on>2019-04-15 18:01:10</sys_updated_on><table/><target_name>definitions.js</target_name><type>JS Include</type><update_domain>global</update_domain><update_guid>fb73e775f6103300ba389014a5a30585</update_guid><update_guid_history>fb73e775f6103300ba389014a5a30585:82724528,9923ab31f2103300da809ca9b79546eb:950966793</update_guid_history><update_set/><view/></sys_update_xml></unload>
